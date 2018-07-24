@@ -15,14 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var firstView: UIView!
+    var count: Int = 0
     var timer: Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let girls = ["银凤","毛毛","艳芳"]
         timer = Timer.scheduledTimer(withTimeInterval: 0.001, repeats: true, block: { (t) in
-            let num = Int(arc4random() % 64)
-            self.numLabel.text = "\(num)"
+//            let num = Int(arc4random() % 64)
+//            self.numLabel.text = "\(num)"
+            let num = Int(arc4random() % 3)
+            self.numLabel.text = girls[num]
         })
         
         let manager = FileManager.default
@@ -94,14 +97,22 @@ class ViewController: UIViewController {
             timer?.fireDate = Date.distantPast
         }else{
             timer?.fireDate = Date.distantFuture
-            let num = Int(numLabel.text!)
-            var str = String(num!, radix:2)
-            if str.count < 6{
-                for _ in 0 ..< 6 - str.count{
-                    str.insert("0", at: str.startIndex)
-                }
+//            let num = Int(numLabel.text!)
+//            var str = String(num!, radix:2)
+//            if str.count < 6{
+//                for _ in 0 ..< 6 - str.count{
+//                    str.insert("0", at: str.startIndex)
+//                }
+//            }
+//            老婆、情人、女朋友
+            if count == 0{
+                binaryLabel.text = "老婆：" + numLabel.text!
+            }else if count == 1{
+                binaryLabel.text = "情人：" + numLabel.text!
+            }else {
+                binaryLabel.text = "女朋友：" + numLabel.text!
             }
-            binaryLabel.text = str
+            count = (count + 1) % 3
         }
     }
     
