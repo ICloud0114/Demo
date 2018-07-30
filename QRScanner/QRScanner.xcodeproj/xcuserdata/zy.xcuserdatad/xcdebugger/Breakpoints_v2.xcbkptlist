@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Repair/AddressPickView.swift"
-            timestampString = "553771860.068573"
+            filePath = "QRScanner/QRScannerViewController.swift"
+            timestampString = "554205198.830467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "cancelButtonClick()"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "metadataOutput(_:didOutput:from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

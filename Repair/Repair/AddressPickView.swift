@@ -9,8 +9,8 @@
 import UIKit
 
 protocol AddressPickViewDelegate {
-    func didFinishSelectDateTime(dateTime: String, pickerView: AddressPickView)
-    func didCancelSelectDateTime()
+    func didFinishSelectArea(area: String, pickerView: AddressPickView)
+    func didCancelSelectArea()
 }
 class AddressPickView: UIView {
     
@@ -112,7 +112,7 @@ class AddressPickView: UIView {
     }
     
     @objc func cancelButtonClick() {
-        self.delegate?.didCancelSelectDateTime()
+        self.delegate?.didCancelSelectArea()
         hideDateTimePickerView()
     }
     
@@ -121,8 +121,11 @@ class AddressPickView: UIView {
        let provinceLabel =  pickerView.view(forRow: pickerView.selectedRow(inComponent: 0), forComponent: 0) as? UILabel
         let cityLabel =  pickerView.view(forRow: pickerView.selectedRow(inComponent: 1), forComponent: 1) as? UILabel
         let countryLabel =  pickerView.view(forRow: pickerView.selectedRow(inComponent: 2), forComponent: 2) as? UILabel
-        print(provinceLabel?.text ?? " ", cityLabel?.text ?? " ", countryLabel?.text ?? " ")
-        self.delegate?.didFinishSelectDateTime(dateTime: "", pickerView: self)
+
+        let area = (provinceLabel?.text)! + (cityLabel?.text)! + (countryLabel?.text)!
+        
+        self.delegate?.didFinishSelectArea(area: area, pickerView: self)
+        
         hideDateTimePickerView()
     }
     
@@ -206,8 +209,6 @@ extension AddressPickView:UIPickerViewDataSource,UIPickerViewDelegate{
 extension AddressPickView{
     
     func showAddressPickerView() {
-        
-//        displayCurrentDateTime(currentDate)
         self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         UIView.animate(withDuration: 0.25) {
             self.alpha = 1

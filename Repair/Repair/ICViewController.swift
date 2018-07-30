@@ -53,13 +53,14 @@ class ICViewController: UIViewController {
 
 }
 extension ICViewController: AddressPickViewDelegate{
-    func didFinishSelectDateTime(dateTime: String, pickerView: AddressPickView) {
+    func didFinishSelectArea(area: String, pickerView: AddressPickView) {
         address.delegate = nil
     }
     
-    func didCancelSelectDateTime() {
+    func didCancelSelectArea() {
         address.delegate = nil
     }
+    
     
     
 }
