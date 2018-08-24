@@ -15,8 +15,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //Base style for login_btn1_disable 拷贝 4
+        let style = UIView(frame: CGRect(x: 20, y: 409, width: 335, height: 50))
+        style.layer.cornerRadius = 8
+        style.layer.borderColor = UIColor(red: 0.0 / 255.0, green: 0.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0).cgColor
+        style.layer.borderWidth = 0.5;
+        style.layer.backgroundColor = UIColor(red: 0.0 / 255.0, green: 0.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0).cgColor
+        style.alpha = 0.2
         
-        
+        view.addSubview(style)
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,7 +66,28 @@ class ViewController: UIViewController {
         self.present(alertVC, animated: true, completion: {
             
         })
+        
+        printData("------")
+        
+        printData(notify: "-------")
+        
+        printData(data: "-------")
+        
     }
+    
+    
+    func printData(_ data: String) {
+        
+    }
+    
+    func printData(notify data: String ){
+        
+    }
+    
+    func printData(data: String){
+        
+    }
+    
 }
 
 
