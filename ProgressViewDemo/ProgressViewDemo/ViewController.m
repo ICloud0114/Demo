@@ -22,7 +22,7 @@
     _progressView.background = [UIColor colorWithRed:243.f/255.f green:243.f/255.f blue:243.f/255.f alpha:1.0];
     _progressView.flat = @NO;
     _progressView.showText = @NO;
-    _progressView.type = LDProgressStripes;
+    _progressView.type = LDProgressSolid;
     _progressView.showBackgroundInnerShadow = @NO;
     _progressView.progress = 0.8;
     _progressView.animate = @YES;
