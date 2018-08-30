@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        progressView.progressTint = UIColor.hexColor("0x0be5ba")
+        progressView.progressTint = UIColor.black
+//        progressView.progressTint = UIColor.hexColor("0x0be5ba")
         progressView.trackTint = UIColor.hexColor("0xf3f3f3")
         progressView.flat = false
         progressView.animate = true

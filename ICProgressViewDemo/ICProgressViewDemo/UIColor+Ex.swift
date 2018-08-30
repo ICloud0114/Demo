@@ -50,8 +50,14 @@ extension UIColor{
     func isLighterColor() -> Bool{
 
         let components = self.cgColor.components
+      // 纯白色的时候有问题
+        if components!.count > 2{
+            
+           return (components![0] + components![1] + components![2]) / 3 >= 0.5
+        }else{
+            return components![0]  >= 0.5
+        }
         
-        return (components![0] + components![1] + components![2]) / 3 >= 0.5
     }
     
     func lighterColor() -> UIColor{
