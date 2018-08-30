@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ICProgressViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txf-2J-mU8" customClass="ICProgressView" customModule="ICProgressViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="333.5" width="240" height="20"/>
+                                <color key="backgroundColor" red="0.4352756076" green="1" blue="0.55574544270000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="txf-2J-mU8" secondAttribute="height" multiplier="12:1" id="bmE-tZ-c4g"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y8d-Si-dB4">
+                                <rect key="frame" x="18" y="403" width="339" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="oXH-ES-hAw"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="txf-2J-mU8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="240:375" id="eBZ-p9-Thv"/>
+                            <constraint firstItem="txf-2J-mU8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="et5-ej-oYT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y8d-Si-dB4" secondAttribute="trailing" constant="20" id="gWP-ey-bJV"/>
+                            <constraint firstItem="Y8d-Si-dB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lFa-Ev-1v7"/>
+                            <constraint firstItem="txf-2J-mU8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lrs-qz-37h"/>
+                            <constraint firstItem="Y8d-Si-dB4" firstAttribute="top" secondItem="txf-2J-mU8" secondAttribute="bottom" constant="50" id="otj-1M-e7O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="txf-2J-mU8" id="V1V-OG-kTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -208,7 +208,7 @@
 - (void)drawStripes:(CGContextRef)context inRect:(CGRect)rect {
     CGContextSaveGState(context);
     [[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:self.borderRadius.floatValue] addClip];
-    CGContextSetFillColorWithColor(context, [[UIColor whiteColor] colorWithAlphaComponent:0.5].CGColor);
+    CGContextSetFillColorWithColor(context, [[UIColor whiteColor] colorWithAlphaComponent:1].CGColor);
     CGFloat xStart = self.offset, height = rect.size.height, width = self.stripeWidth, y = rect.origin.y;
     while (xStart < rect.size.width) {
         CGContextSaveGState(context);
@@ -290,7 +290,7 @@
 - (CGFloat)stripeWidth {
     switch (self.type) {
         case LDProgressGradient:
-            _stripeWidth = 15;
+            _stripeWidth = self.frame.size.width;
             break;
         default:
             _stripeWidth = self.frame.size.height * 2;

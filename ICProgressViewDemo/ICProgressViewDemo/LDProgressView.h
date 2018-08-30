@@ -10,7 +10,7 @@
 
 typedef enum {
     LDProgressStripes,//条纹
-    LDProgressGradient,//阶梯
+    LDProgressGradient,//渐变
     LDProgressSolid//纯色
 } LDProgressType;
 
