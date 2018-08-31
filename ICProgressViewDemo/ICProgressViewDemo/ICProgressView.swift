@@ -34,7 +34,7 @@ class ICProgressView: UIView {
         }
     }
     //  进度条颜色
-    var progressTint: UIColor = UIColor.red
+    var progressTint: UIColor = UIColor.white
     //  轨道颜色
     var trackTint: UIColor = UIColor.black
     //  动画
@@ -153,8 +153,7 @@ class ICProgressView: UIView {
         }
     }
     
-//    //背景
-    
+    //背景
     func drawTrack(context: CGContext, in rect: CGRect)  {
 
         context.saveGState()
@@ -163,23 +162,22 @@ class ICProgressView: UIView {
         context.setFillColor(self.trackTint.cgColor)
         roundedRect.fill()
 
-        
         let roundedRectAngleNegativePath = UIBezierPath(rect: CGRect(x: -10, y: -10, width: rect.width + 10, height: rect.height + 10))
         
         roundedRectAngleNegativePath.append(roundedRect)
         roundedRectAngleNegativePath.usesEvenOddFillRule = true
 
         if showTrackInnerShadow {
-        let shadowOffset = CGSize(width: 0.5, height: 1)
-        context.saveGState()
-        
-        let xOffset = shadowOffset.width + round(rect.size.width)
-        let yOffset = shadowOffset.height
+            let shadowOffset = CGSize(width: 0.5, height: 1)
+            context.saveGState()
             
-        context.setShadow(offset: CGSize(width: (xOffset + copysign(0.1, xOffset)), height: (yOffset + copysign(0.1, yOffset))), blur: 5, color: UIColor.black.withAlphaComponent(0.7).cgColor)
+            let xOffset = shadowOffset.width + round(rect.size.width)
+            let yOffset = shadowOffset.height
+            
+            context.setShadow(offset: CGSize(width: (xOffset + copysign(0.1, xOffset)), height: (yOffset + copysign(0.1, yOffset))), blur: 5, color: UIColor.black.withAlphaComponent(0.7).cgColor)
         }
-        roundedRect.addClip()
         
+        roundedRect.addClip()
         let transform = CGAffineTransform(translationX: -round(rect.size.width), y: 0)
         roundedRectAngleNegativePath.apply(transform)
         UIColor.gray.setFill()
@@ -256,7 +254,11 @@ class ICProgressView: UIView {
     func drawStripes(_ context: CGContext, rect: CGRect){
         context.saveGState()
         UIBezierPath(roundedRect: rect, cornerRadius: self.borderRadius).addClip()
-        context.setFillColor(UIColor.white.withAlphaComponent(0.5).cgColor)
+//        if progressTint.isLighterColor() {
+//            context.setFillColor(UIColor.black.withAlphaComponent(0.5).cgColor)
+//        }else{
+            context.setFillColor(UIColor.white.withAlphaComponent(0.5).cgColor)
+//        }
         var xStart = self.offset
         let height = rect.height
         let width = self.stripeWidth
@@ -276,7 +278,7 @@ class ICProgressView: UIView {
     }
     
     func drawRightAlignedLabel(rect: CGRect){
-        if rect.size.width > 40{
+//        if rect.size.width > 40{
             let label = UILabel(frame: rect)
             label.adjustsFontSizeToFitWidth = true
             label.backgroundColor = UIColor.clear
@@ -286,6 +288,6 @@ class ICProgressView: UIView {
             let baseLabelColor = self.progressTint.isLighterColor() ? UIColor.black : UIColor.white
             label.textColor = baseLabelColor.withAlphaComponent(0.6)
             label.drawText(in: CGRect(x: rect.origin.x + 6, y: rect.origin.y, width: rect.size.width - 12, height: rect.size.height))
-        }
+//        }
     }
 }
