@@ -8,6 +8,7 @@ def t_smart_public_pods
     pod 'TBUser_Http_Lib'
     pod 'TBUser_Http_Lib/TBUser_Http_Ex/TBCloud'
     pod 'SDWebImage', '~> 4.3.0'
+    pod 'SomeSwiftExtensions', '~> 0.0.1'
 end
 
 
