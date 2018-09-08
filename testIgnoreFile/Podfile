@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+use_frameworks!
+
+source 'git@192.168.3.56:ios/PodSpec/TopbandSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+def t_smart_public_pods
+    pod 'TBUser_Http_Lib'
+    pod 'TBUser_Http_Lib/TBUser_Http_Ex/TBCloud'
+    pod 'SDWebImage', '~> 4.3.0'
+end
+
+
+# 空调
+target 'testIgnoreFile' do
+	t_smart_public_pods
+end
+
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+	        target.build_configurations.each do |config|
+			            config.build_settings['SWIFT_VERSION'] = ‘4.0’
+			end
+	 end
+end
+
