@@ -20,22 +20,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showShareSDKAction(_ sender: UIButton) {
-//            TBUser.shareInstance().thirdLogin(withThirdId: <#T##String#>, thirdToken: <#T##String#>, type: <#T##Int32#>, completion: <#T##(Error?) -> Void#>)
+    @IBAction func shareWechatAction(_ sender: Any) {
+        if ShareSDK.hasAuthorized(.typeWechat){
+            ShareSDK.cancelAuthorize(.typeWechat)
+        }
         
         ShareSDK.getUserInfo(.typeWechat) { (state, user, error) in
-
+            
         }
-//        SSDKUser
-//        ShareSDK.getUserInfo(.typeQQ) { (state, user, error) in
-//
-//        }
+    }
+    @IBAction func shareQQAction(_ sender: Any) {
         
-//        ShareSDK.getUserInfo(.typeSinaWeibo) { (state, user, error) in
-//
-//        }
+        if ShareSDK.hasAuthorized(.typeQQ){
+            ShareSDK.cancelAuthorize(.typeQQ)
+        }
+        
+        ShareSDK.getUserInfo(.typeQQ) { (state, user, error) in
+            
+        }
+
+    }
+    @IBAction func shareWeiboAction(_ sender: Any) {
+        ShareSDK.getUserInfo(.typeSinaWeibo) { (state, user, error) in
+            
+        }
     }
     
-
 }
 
