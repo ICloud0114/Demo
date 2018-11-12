@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         let deviceMode = UIDevice.current.systemName
 //        Log(message: deviceMode)
 //        WBCLog.sharedInstance()
+        Log_Info(msg: "-----")
         
     }
 

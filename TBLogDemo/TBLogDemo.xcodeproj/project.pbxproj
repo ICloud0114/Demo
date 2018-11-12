@@ -16,6 +16,7 @@
 		1A415A8321957352001DBDE2 /* WBCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A8021957352001DBDE2 /* WBCLog.m */; };
 		1A415A8421957352001DBDE2 /* WBCSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A8221957352001DBDE2 /* WBCSandbox.m */; };
 		1A415A8721957D61001DBDE2 /* LogUpgradeErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A8621957D61001DBDE2 /* LogUpgradeErrorHelper.m */; };
+		1A415A8A21992E3D001DBDE2 /* TBLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A8921992E3D001DBDE2 /* TBLogManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1A415A8221957352001DBDE2 /* WBCSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCSandbox.m; sourceTree = "<group>"; };
 		1A415A8521957D61001DBDE2 /* LogUpgradeErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUpgradeErrorHelper.h; sourceTree = "<group>"; };
 		1A415A8621957D61001DBDE2 /* LogUpgradeErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUpgradeErrorHelper.m; sourceTree = "<group>"; };
+		1A415A8921992E3D001DBDE2 /* TBLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLogManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				1A415A6921956D14001DBDE2 /* AppDelegate.swift */,
 				1A415A6B21956D14001DBDE2 /* ViewController.swift */,
 				1A415A7B21956E1C001DBDE2 /* TBLog.swift */,
+				1A415A8921992E3D001DBDE2 /* TBLogManager.swift */,
 				1A415A7E21957352001DBDE2 /* WBCLog.h */,
 				1A415A8021957352001DBDE2 /* WBCLog.m */,
 				1A415A7F21957352001DBDE2 /* WBCLogMacros.h */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A415A8A21992E3D001DBDE2 /* TBLogManager.swift in Sources */,
 				1A415A7C21956E1C001DBDE2 /* TBLog.swift in Sources */,
 				1A415A8421957352001DBDE2 /* WBCSandbox.m in Sources */,
 				1A415A8721957D61001DBDE2 /* LogUpgradeErrorHelper.m in Sources */,

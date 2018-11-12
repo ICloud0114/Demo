@@ -8,8 +8,21 @@
 
 import Foundation
 
-func Log<T>(message: T, file: String = #file, method: String = #function, line: Int = #line) {
-    #if DEBUG
-    print("\((file as NSString).lastPathComponent)\n\(method):\(line) ->📝\(message)")
-    #endif
+enum LogLevel {
+    case DEBUG //调试模式
+    case INFO  //信息日志
+    case WARN  //警告日志
+    case ERROR //错误日志
+    case FATAL //致命日志
+    case NONE  //无
+}
+
+func Log_Debug<T>(msg: T, file: String = #file, method: String = #function, line: Int = #line){
+    let msg = "\((file as NSString).lastPathComponent)\n\(Date()) \(method):\(line) ->📝\(msg)"
+    TBLogManager.default.Log(level: .DEBUG, message: msg)
+}
+
+func Log_Info<T>(msg: T, file: String = #file, method: String = #function, line: Int = #line){
+    let msg = "\((file as NSString).lastPathComponent)\n\(Date()) \(method):\(line) ->📝\(msg)"
+    TBLogManager.default.Log(level: .INFO, message: msg)
 }
