@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
     var window: UIWindow?
 
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             case SSDKPlatformType.typeWechat:
                 //设置微信应用信息
                 appInfo?.ssdkSetupWeChat(byAppId: "wxa3c5c64c8a10b37e",
-                                         appSecret: "6ff945955996d5abb2cebd4c93a593cd")
+                                         appSecret: "534f1fd2b354a927835587a8287d6aab")
             case SSDKPlatformType.typeQQ:
                 //设置QQ应用信息
                 appInfo?.ssdkSetupQQ(byAppId: "1107799395",
@@ -81,6 +81,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        return WXApi.handleOpen(url, delegate: self)
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return WXApi.handleOpen(url, delegate: self)
+    }
+    
+    func onReq(_ req: BaseReq!) {
+        
+    }
+    func onResp(_ resp: BaseResp!) {
+        
+        if (resp is SendMessageToWXResp) {
+            switch (resp.errCode) {
+            case 0:
+                print("分享成功")
+            default:
+                print("分享失败")
+            }
+        }
+    }
 }
 

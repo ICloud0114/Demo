@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,24 +19,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rc-HE-Mt0">
-                                <rect key="frame" x="162.5" y="328.5" width="50" height="30"/>
+                                <rect key="frame" x="162.5" y="228.5" width="50" height="30"/>
                                 <state key="normal" title="wechat"/>
                                 <connections>
-                                    <action selector="shareWechatAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6i-Kk-CME"/>
+                                    <action selector="weChatLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNT-l0-2fh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3C-bz-KZc">
-                                <rect key="frame" x="172" y="385" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="285" width="30" height="30"/>
                                 <state key="normal" title="QQ"/>
                                 <connections>
-                                    <action selector="shareQQAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irR-5I-ZC2"/>
+                                    <action selector="qqLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzU-Cq-ABP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-Rc-bt1">
-                                <rect key="frame" x="167" y="445" width="41" height="30"/>
+                                <rect key="frame" x="167" y="345" width="41" height="30"/>
                                 <state key="normal" title="weibo"/>
                                 <connections>
-                                    <action selector="shareWeiboAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tr5-Dw-I4J"/>
+                                    <action selector="weiboLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0T-9i-pCH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-J0-SzK">
+                                <rect key="frame" x="156.5" y="405" width="62" height="30"/>
+                                <state key="normal" title="微信分享"/>
+                                <connections>
+                                    <action selector="shareWechatAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9V-CX-g1H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-An-srX">
+                                <rect key="frame" x="156.5" y="525" width="62" height="30"/>
+                                <state key="normal" title="微博分享"/>
+                                <connections>
+                                    <action selector="shareWeiboAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="svX-4e-l0h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSJ-z5-F3j">
+                                <rect key="frame" x="149" y="465" width="77" height="30"/>
+                                <state key="normal" title="朋友圈分享"/>
+                                <connections>
+                                    <action selector="shareMomentsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qk0-Ja-yz9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,10 +65,16 @@
                         <constraints>
                             <constraint firstItem="l3C-bz-KZc" firstAttribute="centerX" secondItem="8Rc-HE-Mt0" secondAttribute="centerX" id="53e-cA-2nB"/>
                             <constraint firstItem="dkc-Rc-bt1" firstAttribute="top" secondItem="l3C-bz-KZc" secondAttribute="bottom" constant="30" id="DHh-D4-BJK"/>
-                            <constraint firstItem="8Rc-HE-Mt0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JXF-ud-bMq"/>
+                            <constraint firstItem="8Rc-HE-Mt0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="JXF-ud-bMq"/>
                             <constraint firstItem="8Rc-HE-Mt0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MUB-Qv-mIE"/>
+                            <constraint firstItem="MLg-An-srX" firstAttribute="top" secondItem="sSJ-z5-F3j" secondAttribute="bottom" constant="30" id="VaC-R4-G5F"/>
                             <constraint firstItem="dkc-Rc-bt1" firstAttribute="centerX" secondItem="l3C-bz-KZc" secondAttribute="centerX" id="a07-aO-CSt"/>
+                            <constraint firstItem="sSJ-z5-F3j" firstAttribute="top" secondItem="pjj-J0-SzK" secondAttribute="bottom" constant="30" id="bAP-Ej-5Rs"/>
+                            <constraint firstItem="MLg-An-srX" firstAttribute="centerX" secondItem="sSJ-z5-F3j" secondAttribute="centerX" id="fqn-jd-OGd"/>
+                            <constraint firstItem="pjj-J0-SzK" firstAttribute="top" secondItem="dkc-Rc-bt1" secondAttribute="bottom" constant="30" id="hRT-Aa-hy0"/>
+                            <constraint firstItem="pjj-J0-SzK" firstAttribute="centerX" secondItem="dkc-Rc-bt1" secondAttribute="centerX" id="iaO-GY-ViF"/>
                             <constraint firstItem="l3C-bz-KZc" firstAttribute="top" secondItem="8Rc-HE-Mt0" secondAttribute="bottom" constant="26.5" id="ilG-kf-4rf"/>
+                            <constraint firstItem="sSJ-z5-F3j" firstAttribute="centerX" secondItem="pjj-J0-SzK" secondAttribute="centerX" id="oa7-KV-Sd4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

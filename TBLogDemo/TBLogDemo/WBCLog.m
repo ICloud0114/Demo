@@ -12,7 +12,7 @@
 
 #define WBC_LOG_DEFAULT_LEVEL_TRIGGER   WBCLog_LEVEL_DEBUG
 #define WBC_LOG_DEFAULT_COUNT_LIMIT     20
-#define WBC_LOG_DEFAULT_SIZE_LIMIT      (1024*250)//250KB
+#define WBC_LOG_DEFAULT_SIZE_LIMIT      (1024 * 250)//250KB
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 #define APP_VERSION [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]
 
@@ -111,7 +111,7 @@ static dispatch_queue_t log2file_operation_processing_queue(){
         lastModifyLogIndex = [self findLastModifyLogIndex];
         
         [self dateFormatter];
-        [self carshDateFormatter];        
+        [self carshDateFormatter];
     }
 }
 
@@ -212,6 +212,7 @@ static dispatch_queue_t log2file_operation_processing_queue(){
 {
 
     FILE *fd = [self shouldWriteFile];
+
     if (fd == NULL) {
         NSLog(@"open log file failed.");
         return NO;
@@ -221,7 +222,6 @@ static dispatch_queue_t log2file_operation_processing_queue(){
     fputs("\r\n", fd);
     fflush(fd);
     fclose(fd);
-    
     return YES;
 }
 

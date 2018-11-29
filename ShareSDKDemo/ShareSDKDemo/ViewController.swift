@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func shareWechatAction(_ sender: Any) {
+    @IBAction func weChatLoginAction(_ sender: Any){
         if ShareSDK.hasAuthorized(.typeWechat){
             ShareSDK.cancelAuthorize(.typeWechat)
         }
@@ -29,8 +29,8 @@ class ViewController: UIViewController {
             
         }
     }
-    @IBAction func shareQQAction(_ sender: Any) {
-        
+    
+    @IBAction func qqLoginAction(_ sender: Any){
         if ShareSDK.hasAuthorized(.typeQQ){
             ShareSDK.cancelAuthorize(.typeQQ)
         }
@@ -38,13 +38,41 @@ class ViewController: UIViewController {
         ShareSDK.getUserInfo(.typeQQ) { (state, user, error) in
             
         }
-
     }
-    @IBAction func shareWeiboAction(_ sender: Any) {
+    
+    @IBAction func weiboLoginAction(_ sender: Any){
         ShareSDK.getUserInfo(.typeSinaWeibo) { (state, user, error) in
             
         }
     }
+    
+    @IBAction func shareWechatAction(_ sender: Any) {
+        
+        let params = NSMutableDictionary()
+        params.ssdkSetupShareParams(byText: "-----", images: UIImage(named: "lucky"), url: nil, title: nil, type: .image)
+        ShareSDK.share(.subTypeWechatSession, parameters: params) { (state, data, content, error) in
+            
+        }
+    }
+    
+    @IBAction func shareMomentsAction(_ sender: Any) {
+        let params = NSMutableDictionary()
+        params.ssdkSetupShareParams(byText: "-----", images: UIImage(named: "lucky"), url: nil, title: nil, type: .image)
+        ShareSDK.share(.subTypeWechatTimeline, parameters: params) { (state, data, content, error) in
+            
+        }
+
+    }
+    @IBAction func shareWeiboAction(_ sender: Any) {
+        
+        let params = NSMutableDictionary()
+        params.ssdkSetupShareParams(byText: "-----", images: UIImage(named: "lucky"), url: nil, title: nil, type: .image)
+        ShareSDK.share(.typeSinaWeibo, parameters: params) { (state, data, content, error) in
+            
+        }
+    }
+    
+    
     
 }
 

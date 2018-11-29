@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A07D3C5219BC3FD00208A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A07D3C4219BC3FD00208A47 /* Main.storyboard */; };
 		1A415A6A21956D14001DBDE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6921956D14001DBDE2 /* AppDelegate.swift */; };
 		1A415A6C21956D14001DBDE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6B21956D14001DBDE2 /* ViewController.swift */; };
-		1A415A6F21956D14001DBDE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A415A6D21956D14001DBDE2 /* Main.storyboard */; };
 		1A415A7121956D15001DBDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A415A7021956D15001DBDE2 /* Assets.xcassets */; };
 		1A415A7421956D15001DBDE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A415A7221956D15001DBDE2 /* LaunchScreen.storyboard */; };
 		1A415A7C21956E1C001DBDE2 /* TBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A7B21956E1C001DBDE2 /* TBLog.swift */; };
@@ -20,10 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A07D3C4219BC3FD00208A47 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1A415A6621956D14001DBDE2 /* TBLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A415A6921956D14001DBDE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A415A6B21956D14001DBDE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A415A6E21956D14001DBDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A415A7021956D15001DBDE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A415A7321956D15001DBDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A415A7521956D15001DBDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				1A415A8221957352001DBDE2 /* WBCSandbox.m */,
 				1A415A8521957D61001DBDE2 /* LogUpgradeErrorHelper.h */,
 				1A415A8621957D61001DBDE2 /* LogUpgradeErrorHelper.m */,
-				1A415A6D21956D14001DBDE2 /* Main.storyboard */,
+				1A07D3C4219BC3FD00208A47 /* Main.storyboard */,
 				1A415A7021956D15001DBDE2 /* Assets.xcassets */,
 				1A415A7221956D15001DBDE2 /* LaunchScreen.storyboard */,
 				1A415A7521956D15001DBDE2 /* Info.plist */,
@@ -148,9 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A07D3C5219BC3FD00208A47 /* Main.storyboard in Resources */,
 				1A415A7421956D15001DBDE2 /* LaunchScreen.storyboard in Resources */,
 				1A415A7121956D15001DBDE2 /* Assets.xcassets in Resources */,
-				1A415A6F21956D14001DBDE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,14 +174,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A415A6D21956D14001DBDE2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A415A6E21956D14001DBDE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1A415A7221956D15001DBDE2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -315,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N328N2YE4V;
 				INFOPLIST_FILE = TBLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N328N2YE4V;
 				INFOPLIST_FILE = TBLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

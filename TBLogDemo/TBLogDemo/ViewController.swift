@@ -20,10 +20,16 @@ class ViewController: UIViewController {
         let deviceMode = UIDevice.current.systemName
 //        Log(message: deviceMode)
 //        WBCLog.sharedInstance()
-        Log_Info(msg: "-----")
+        
+        while true {
+            
+        }
         
     }
-
+    @IBAction func addLogAction(_ sender: Any) {
+        Log_Debug(msg: "日志+++++++")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
