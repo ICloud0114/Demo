@@ -14,6 +14,7 @@
 		24E16AAA215FEFD400AE7A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E16AA8215FEFD400AE7A49 /* LaunchScreen.storyboard */; };
 		24E16AB5215FEFD400AE7A49 /* NewTestDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E16AB4215FEFD400AE7A49 /* NewTestDemoTests.swift */; };
 		24E16AC0215FEFD400AE7A49 /* NewTestDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E16ABF215FEFD400AE7A49 /* NewTestDemoUITests.swift */; };
+		24E2D9E721C0243E006B72C9 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E2D9E621C0243E006B72C9 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		24E16ABB215FEFD400AE7A49 /* NewTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E16ABF215FEFD400AE7A49 /* NewTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestDemoUITests.swift; sourceTree = "<group>"; };
 		24E16AC1215FEFD500AE7A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E2D9E621C0243E006B72C9 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				24E16A9F215FEFD200AE7A49 /* AppDelegate.swift */,
 				24E16AA1215FEFD200AE7A49 /* ViewController.swift */,
+				24E2D9E621C0243E006B72C9 /* ContentViewController.swift */,
 				24E16AA3215FEFD200AE7A49 /* Main.storyboard */,
 				24E16AA6215FEFD400AE7A49 /* Assets.xcassets */,
 				24E16AA8215FEFD400AE7A49 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E16AA2215FEFD200AE7A49 /* ViewController.swift in Sources */,
+				24E2D9E721C0243E006B72C9 /* ContentViewController.swift in Sources */,
 				24E16AA0215FEFD200AE7A49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
