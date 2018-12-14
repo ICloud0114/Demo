@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     @IBAction func shareWechatAction(_ sender: Any) {
         
         let params = NSMutableDictionary()
-        params.ssdkSetupShareParams(byText: "-----", images: UIImage(named: "lucky"), url: nil, title: nil, type: .image)
+        params.ssdkSetupShareParams(byText: "-----", images: UIImage(named: "lucky"), url: nil, title: nil, type: .video)
         ShareSDK.share(.subTypeWechatSession, parameters: params) { (state, data, content, error) in
             
         }
