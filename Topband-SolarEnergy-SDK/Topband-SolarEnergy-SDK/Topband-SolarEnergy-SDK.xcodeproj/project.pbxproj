@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1891B8312086EA97009AD94A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8302086EA97009AD94A /* AppDelegate.m */; };
+		1891B8342086EA97009AD94A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8332086EA97009AD94A /* ViewController.m */; };
+		1891B8372086EA97009AD94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891B8352086EA97009AD94A /* Main.storyboard */; };
+		1891B8392086EA97009AD94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1891B8382086EA97009AD94A /* Assets.xcassets */; };
+		1891B83C2086EA97009AD94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891B83A2086EA97009AD94A /* LaunchScreen.storyboard */; };
+		1891B83F2086EA97009AD94A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B83E2086EA97009AD94A /* main.m */; };
+		1891B8492086EA97009AD94A /* Topband_SolarEnergy_SDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8482086EA97009AD94A /* Topband_SolarEnergy_SDKTests.m */; };
+		1891B8562086ECBF009AD94A /* TBSolarEnergySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8552086ECBF009AD94A /* TBSolarEnergySDK.m */; };
+		1891B8592086ED13009AD94A /* TBSolarEnergyTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8582086ED13009AD94A /* TBSolarEnergyTables.m */; };
+		1891B85F2086EE93009AD94A /* TBSysUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B85D2086EE8E009AD94A /* TBSysUser.m */; };
+		1891B8622086EEB8009AD94A /* TBSysUser+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8612086EEB5009AD94A /* TBSysUser+TableCoding.m */; };
+		1891B86B2086EF90009AD94A /* TBEventMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8652086EF8F009AD94A /* TBEventMessage.m */; };
+		1891B86C2086EF90009AD94A /* TBPowerStationGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8662086EF8F009AD94A /* TBPowerStationGateway.m */; };
+		1891B86D2086EF90009AD94A /* TBNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8682086EF8F009AD94A /* TBNotice.m */; };
+		1891B86E2086EF90009AD94A /* TBPowerStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B86A2086EF90009AD94A /* TBPowerStation.m */; };
+		1891B8772086EFF0009AD94A /* TBEventMessage+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8702086EFEF009AD94A /* TBEventMessage+TableCoding.m */; };
+		1891B8782086EFF0009AD94A /* TBPowerStation+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8722086EFEF009AD94A /* TBPowerStation+TableCoding.m */; };
+		1891B8792086EFF0009AD94A /* TBNotice+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8742086EFF0009AD94A /* TBNotice+TableCoding.m */; };
+		1891B87A2086EFF0009AD94A /* TBPowerStationGateway+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B8752086EFF0009AD94A /* TBPowerStationGateway+TableCoding.m */; };
+		18F529A42086F35100BD8AF5 /* TBPowerStationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529A22086F35100BD8AF5 /* TBPowerStationManager.m */; };
+		18F529A82086F61100BD8AF5 /* TBPowerStationAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529A72086F61100BD8AF5 /* TBPowerStationAccount.m */; };
+		18F529AB2086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529AA2086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.m */; };
+		18F529BB20871E3500BD8AF5 /* TBPowerStation+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529BA20871E3500BD8AF5 /* TBPowerStation+Extension.m */; };
+		18F529C020871EF600BD8AF5 /* TBPowerStationRealData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529BD20871EF600BD8AF5 /* TBPowerStationRealData.m */; };
+		18F529C120871EF600BD8AF5 /* TBStatisticsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529BE20871EF600BD8AF5 /* TBStatisticsDataModel.m */; };
+		18F529CA2087295D00BD8AF5 /* TBPowerRateGetCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529C92087295D00BD8AF5 /* TBPowerRateGetCmd.m */; };
+		18F529CC208729BB00BD8AF5 /* TBPowerTotalGetCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529CB208729BA00BD8AF5 /* TBPowerTotalGetCmd.m */; };
+		18F529D92087314200BD8AF5 /* TBNotice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529D82087314200BD8AF5 /* TBNotice+Extension.m */; };
+		18F529DC208732FD00BD8AF5 /* TBEventMessage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529DB208732FD00BD8AF5 /* TBEventMessage+Extension.m */; };
+		18F529E3208744D100BD8AF5 /* TBEventMessage+Pull.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529E2208744D100BD8AF5 /* TBEventMessage+Pull.m */; };
+		18F529E6208748CB00BD8AF5 /* TBNotice+Pull.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529E5208748CB00BD8AF5 /* TBNotice+Pull.m */; };
+		FD0CEDDD00B1603AA9F08751 /* Pods_Topband_SolarEnergy_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3666DB9A3885616E2BA61878 /* Pods_Topband_SolarEnergy_SDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1891B8452086EA97009AD94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1891B8242086EA97009AD94A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1891B82B2086EA97009AD94A;
+			remoteInfo = "Topband-SolarEnergy-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1891B82C2086EA97009AD94A /* Topband-SolarEnergy-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Topband-SolarEnergy-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1891B82F2086EA97009AD94A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1891B8302086EA97009AD94A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1891B8322086EA97009AD94A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1891B8332086EA97009AD94A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1891B8362086EA97009AD94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1891B8382086EA97009AD94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1891B83B2086EA97009AD94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1891B83D2086EA97009AD94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1891B83E2086EA97009AD94A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1891B8442086EA97009AD94A /* Topband-SolarEnergy-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Topband-SolarEnergy-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1891B8482086EA97009AD94A /* Topband_SolarEnergy_SDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topband_SolarEnergy_SDKTests.m; sourceTree = "<group>"; };
+		1891B84A2086EA97009AD94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1891B8542086ECBF009AD94A /* TBSolarEnergySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBSolarEnergySDK.h; sourceTree = "<group>"; };
+		1891B8552086ECBF009AD94A /* TBSolarEnergySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBSolarEnergySDK.m; sourceTree = "<group>"; };
+		1891B8572086ED13009AD94A /* TBSolarEnergyTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBSolarEnergyTables.h; sourceTree = "<group>"; };
+		1891B8582086ED13009AD94A /* TBSolarEnergyTables.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBSolarEnergyTables.m; sourceTree = "<group>"; };
+		1891B85D2086EE8E009AD94A /* TBSysUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBSysUser.m; sourceTree = "<group>"; };
+		1891B85E2086EE8E009AD94A /* TBSysUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBSysUser.h; sourceTree = "<group>"; };
+		1891B8602086EEB5009AD94A /* TBSysUser+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBSysUser+TableCoding.h"; sourceTree = "<group>"; };
+		1891B8612086EEB5009AD94A /* TBSysUser+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBSysUser+TableCoding.m"; sourceTree = "<group>"; };
+		1891B8632086EF8F009AD94A /* TBPowerStationGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerStationGateway.h; sourceTree = "<group>"; };
+		1891B8642086EF8F009AD94A /* TBEventMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBEventMessage.h; sourceTree = "<group>"; };
+		1891B8652086EF8F009AD94A /* TBEventMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBEventMessage.m; sourceTree = "<group>"; };
+		1891B8662086EF8F009AD94A /* TBPowerStationGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerStationGateway.m; sourceTree = "<group>"; };
+		1891B8672086EF8F009AD94A /* TBPowerStation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerStation.h; sourceTree = "<group>"; };
+		1891B8682086EF8F009AD94A /* TBNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBNotice.m; sourceTree = "<group>"; };
+		1891B8692086EF90009AD94A /* TBNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBNotice.h; sourceTree = "<group>"; };
+		1891B86A2086EF90009AD94A /* TBPowerStation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerStation.m; sourceTree = "<group>"; };
+		1891B86F2086EFEF009AD94A /* TBPowerStation+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPowerStation+TableCoding.h"; sourceTree = "<group>"; };
+		1891B8702086EFEF009AD94A /* TBEventMessage+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBEventMessage+TableCoding.m"; sourceTree = "<group>"; };
+		1891B8712086EFEF009AD94A /* TBPowerStationGateway+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPowerStationGateway+TableCoding.h"; sourceTree = "<group>"; };
+		1891B8722086EFEF009AD94A /* TBPowerStation+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBPowerStation+TableCoding.m"; sourceTree = "<group>"; };
+		1891B8732086EFEF009AD94A /* TBNotice+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBNotice+TableCoding.h"; sourceTree = "<group>"; };
+		1891B8742086EFF0009AD94A /* TBNotice+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBNotice+TableCoding.m"; sourceTree = "<group>"; };
+		1891B8752086EFF0009AD94A /* TBPowerStationGateway+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBPowerStationGateway+TableCoding.m"; sourceTree = "<group>"; };
+		1891B8762086EFF0009AD94A /* TBEventMessage+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBEventMessage+TableCoding.h"; sourceTree = "<group>"; };
+		18F529A22086F35100BD8AF5 /* TBPowerStationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerStationManager.m; sourceTree = "<group>"; };
+		18F529A32086F35100BD8AF5 /* TBPowerStationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerStationManager.h; sourceTree = "<group>"; };
+		18F529A62086F61100BD8AF5 /* TBPowerStationAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerStationAccount.h; sourceTree = "<group>"; };
+		18F529A72086F61100BD8AF5 /* TBPowerStationAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerStationAccount.m; sourceTree = "<group>"; };
+		18F529A92086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPowerStationAccount+TableCoding.h"; sourceTree = "<group>"; };
+		18F529AA2086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBPowerStationAccount+TableCoding.m"; sourceTree = "<group>"; };
+		18F529B920871E3500BD8AF5 /* TBPowerStation+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBPowerStation+Extension.h"; sourceTree = "<group>"; };
+		18F529BA20871E3500BD8AF5 /* TBPowerStation+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBPowerStation+Extension.m"; sourceTree = "<group>"; };
+		18F529BC20871EF500BD8AF5 /* TBPowerStationRealData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerStationRealData.h; sourceTree = "<group>"; };
+		18F529BD20871EF600BD8AF5 /* TBPowerStationRealData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerStationRealData.m; sourceTree = "<group>"; };
+		18F529BE20871EF600BD8AF5 /* TBStatisticsDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBStatisticsDataModel.m; sourceTree = "<group>"; };
+		18F529BF20871EF600BD8AF5 /* TBStatisticsDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBStatisticsDataModel.h; sourceTree = "<group>"; };
+		18F529C3208728A200BD8AF5 /* TBPowerRateGetCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerRateGetCmd.h; sourceTree = "<group>"; };
+		18F529C4208728A200BD8AF5 /* TBPowerTotalGetCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBPowerTotalGetCmd.h; sourceTree = "<group>"; };
+		18F529C92087295D00BD8AF5 /* TBPowerRateGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerRateGetCmd.m; sourceTree = "<group>"; };
+		18F529CB208729BA00BD8AF5 /* TBPowerTotalGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPowerTotalGetCmd.m; sourceTree = "<group>"; };
+		18F529D72087314200BD8AF5 /* TBNotice+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBNotice+Extension.h"; sourceTree = "<group>"; };
+		18F529D82087314200BD8AF5 /* TBNotice+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBNotice+Extension.m"; sourceTree = "<group>"; };
+		18F529DA208732FD00BD8AF5 /* TBEventMessage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBEventMessage+Extension.h"; sourceTree = "<group>"; };
+		18F529DB208732FD00BD8AF5 /* TBEventMessage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBEventMessage+Extension.m"; sourceTree = "<group>"; };
+		18F529E1208744D100BD8AF5 /* TBEventMessage+Pull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBEventMessage+Pull.h"; sourceTree = "<group>"; };
+		18F529E2208744D100BD8AF5 /* TBEventMessage+Pull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBEventMessage+Pull.m"; sourceTree = "<group>"; };
+		18F529E4208748CB00BD8AF5 /* TBNotice+Pull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBNotice+Pull.h"; sourceTree = "<group>"; };
+		18F529E5208748CB00BD8AF5 /* TBNotice+Pull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBNotice+Pull.m"; sourceTree = "<group>"; };
+		3666DB9A3885616E2BA61878 /* Pods_Topband_SolarEnergy_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Topband_SolarEnergy_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BBEF6825F057544C8B12ED /* Pods-Topband-SolarEnergy-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Topband-SolarEnergy-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Topband-SolarEnergy-SDK/Pods-Topband-SolarEnergy-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		EF04471CDDCE4559656DF67A /* Pods-Topband-SolarEnergy-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Topband-SolarEnergy-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Topband-SolarEnergy-SDK/Pods-Topband-SolarEnergy-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1891B8292086EA97009AD94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0CEDDD00B1603AA9F08751 /* Pods_Topband_SolarEnergy_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1891B8412086EA97009AD94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1891B8232086EA97009AD94A = {
+			isa = PBXGroup;
+			children = (
+				1891B8532086EC98009AD94A /* Source */,
+				1891B82E2086EA97009AD94A /* Topband-SolarEnergy-SDK */,
+				1891B8472086EA97009AD94A /* Topband-SolarEnergy-SDKTests */,
+				1891B82D2086EA97009AD94A /* Products */,
+				9A1CBB2A8E98208DF3989958 /* Pods */,
+				18EDA438B8413C5C5DD8EF39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1891B82D2086EA97009AD94A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1891B82C2086EA97009AD94A /* Topband-SolarEnergy-SDK.app */,
+				1891B8442086EA97009AD94A /* Topband-SolarEnergy-SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1891B82E2086EA97009AD94A /* Topband-SolarEnergy-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1891B82F2086EA97009AD94A /* AppDelegate.h */,
+				1891B8302086EA97009AD94A /* AppDelegate.m */,
+				1891B8322086EA97009AD94A /* ViewController.h */,
+				1891B8332086EA97009AD94A /* ViewController.m */,
+				1891B8352086EA97009AD94A /* Main.storyboard */,
+				1891B8382086EA97009AD94A /* Assets.xcassets */,
+				1891B83A2086EA97009AD94A /* LaunchScreen.storyboard */,
+				1891B83D2086EA97009AD94A /* Info.plist */,
+				1891B83E2086EA97009AD94A /* main.m */,
+			);
+			path = "Topband-SolarEnergy-SDK";
+			sourceTree = "<group>";
+		};
+		1891B8472086EA97009AD94A /* Topband-SolarEnergy-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				1891B8482086EA97009AD94A /* Topband_SolarEnergy_SDKTests.m */,
+				1891B84A2086EA97009AD94A /* Info.plist */,
+			);
+			path = "Topband-SolarEnergy-SDKTests";
+			sourceTree = "<group>";
+		};
+		1891B8532086EC98009AD94A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18F529C22087288B00BD8AF5 /* Cmds */,
+				1891B85C2086EDEF009AD94A /* DataBase */,
+				1891B85B2086EDEA009AD94A /* Models */,
+				1891B8572086ED13009AD94A /* TBSolarEnergyTables.h */,
+				1891B8582086ED13009AD94A /* TBSolarEnergyTables.m */,
+				1891B8542086ECBF009AD94A /* TBSolarEnergySDK.h */,
+				1891B8552086ECBF009AD94A /* TBSolarEnergySDK.m */,
+				18F529A32086F35100BD8AF5 /* TBPowerStationManager.h */,
+				18F529A22086F35100BD8AF5 /* TBPowerStationManager.m */,
+				18F529B920871E3500BD8AF5 /* TBPowerStation+Extension.h */,
+				18F529BA20871E3500BD8AF5 /* TBPowerStation+Extension.m */,
+				18F529BC20871EF500BD8AF5 /* TBPowerStationRealData.h */,
+				18F529BD20871EF600BD8AF5 /* TBPowerStationRealData.m */,
+				18F529BF20871EF600BD8AF5 /* TBStatisticsDataModel.h */,
+				18F529BE20871EF600BD8AF5 /* TBStatisticsDataModel.m */,
+				18F529D72087314200BD8AF5 /* TBNotice+Extension.h */,
+				18F529D82087314200BD8AF5 /* TBNotice+Extension.m */,
+				18F529E4208748CB00BD8AF5 /* TBNotice+Pull.h */,
+				18F529E5208748CB00BD8AF5 /* TBNotice+Pull.m */,
+				18F529DA208732FD00BD8AF5 /* TBEventMessage+Extension.h */,
+				18F529DB208732FD00BD8AF5 /* TBEventMessage+Extension.m */,
+				18F529E1208744D100BD8AF5 /* TBEventMessage+Pull.h */,
+				18F529E2208744D100BD8AF5 /* TBEventMessage+Pull.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1891B85B2086EDEA009AD94A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1891B85E2086EE8E009AD94A /* TBSysUser.h */,
+				1891B85D2086EE8E009AD94A /* TBSysUser.m */,
+				1891B8642086EF8F009AD94A /* TBEventMessage.h */,
+				1891B8652086EF8F009AD94A /* TBEventMessage.m */,
+				1891B8692086EF90009AD94A /* TBNotice.h */,
+				1891B8682086EF8F009AD94A /* TBNotice.m */,
+				1891B8672086EF8F009AD94A /* TBPowerStation.h */,
+				1891B86A2086EF90009AD94A /* TBPowerStation.m */,
+				1891B8632086EF8F009AD94A /* TBPowerStationGateway.h */,
+				1891B8662086EF8F009AD94A /* TBPowerStationGateway.m */,
+				18F529A62086F61100BD8AF5 /* TBPowerStationAccount.h */,
+				18F529A72086F61100BD8AF5 /* TBPowerStationAccount.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1891B85C2086EDEF009AD94A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				1891B8602086EEB5009AD94A /* TBSysUser+TableCoding.h */,
+				1891B8612086EEB5009AD94A /* TBSysUser+TableCoding.m */,
+				1891B8762086EFF0009AD94A /* TBEventMessage+TableCoding.h */,
+				1891B8702086EFEF009AD94A /* TBEventMessage+TableCoding.m */,
+				1891B8732086EFEF009AD94A /* TBNotice+TableCoding.h */,
+				1891B8742086EFF0009AD94A /* TBNotice+TableCoding.m */,
+				1891B86F2086EFEF009AD94A /* TBPowerStation+TableCoding.h */,
+				1891B8722086EFEF009AD94A /* TBPowerStation+TableCoding.m */,
+				1891B8712086EFEF009AD94A /* TBPowerStationGateway+TableCoding.h */,
+				1891B8752086EFF0009AD94A /* TBPowerStationGateway+TableCoding.m */,
+				18F529A92086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.h */,
+				18F529AA2086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.m */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		18EDA438B8413C5C5DD8EF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3666DB9A3885616E2BA61878 /* Pods_Topband_SolarEnergy_SDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F529C22087288B00BD8AF5 /* Cmds */ = {
+			isa = PBXGroup;
+			children = (
+				18F529C3208728A200BD8AF5 /* TBPowerRateGetCmd.h */,
+				18F529C92087295D00BD8AF5 /* TBPowerRateGetCmd.m */,
+				18F529C4208728A200BD8AF5 /* TBPowerTotalGetCmd.h */,
+				18F529CB208729BA00BD8AF5 /* TBPowerTotalGetCmd.m */,
+			);
+			name = Cmds;
+			sourceTree = "<group>";
+		};
+		9A1CBB2A8E98208DF3989958 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF04471CDDCE4559656DF67A /* Pods-Topband-SolarEnergy-SDK.debug.xcconfig */,
+				E7BBEF6825F057544C8B12ED /* Pods-Topband-SolarEnergy-SDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1891B82B2086EA97009AD94A /* Topband-SolarEnergy-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1891B84D2086EA97009AD94A /* Build configuration list for PBXNativeTarget "Topband-SolarEnergy-SDK" */;
+			buildPhases = (
+				20FAED6BFF74CD32A2C61D18 /* [CP] Check Pods Manifest.lock */,
+				1891B8282086EA97009AD94A /* Sources */,
+				1891B8292086EA97009AD94A /* Frameworks */,
+				1891B82A2086EA97009AD94A /* Resources */,
+				5F88C7D562ECE93BB25B0D75 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Topband-SolarEnergy-SDK";
+			productName = "Topband-SolarEnergy-SDK";
+			productReference = 1891B82C2086EA97009AD94A /* Topband-SolarEnergy-SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1891B8432086EA97009AD94A /* Topband-SolarEnergy-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1891B8502086EA97009AD94A /* Build configuration list for PBXNativeTarget "Topband-SolarEnergy-SDKTests" */;
+			buildPhases = (
+				1891B8402086EA97009AD94A /* Sources */,
+				1891B8412086EA97009AD94A /* Frameworks */,
+				1891B8422086EA97009AD94A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1891B8462086EA97009AD94A /* PBXTargetDependency */,
+			);
+			name = "Topband-SolarEnergy-SDKTests";
+			productName = "Topband-SolarEnergy-SDKTests";
+			productReference = 1891B8442086EA97009AD94A /* Topband-SolarEnergy-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1891B8242086EA97009AD94A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Ramon;
+				TargetAttributes = {
+					1891B82B2086EA97009AD94A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					1891B8432086EA97009AD94A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1891B82B2086EA97009AD94A;
+					};
+				};
+			};
+			buildConfigurationList = 1891B8272086EA97009AD94A /* Build configuration list for PBXProject "Topband-SolarEnergy-SDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1891B8232086EA97009AD94A;
+			productRefGroup = 1891B82D2086EA97009AD94A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1891B82B2086EA97009AD94A /* Topband-SolarEnergy-SDK */,
+				1891B8432086EA97009AD94A /* Topband-SolarEnergy-SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1891B82A2086EA97009AD94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1891B83C2086EA97009AD94A /* LaunchScreen.storyboard in Resources */,
+				1891B8392086EA97009AD94A /* Assets.xcassets in Resources */,
+				1891B8372086EA97009AD94A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1891B8422086EA97009AD94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20FAED6BFF74CD32A2C61D18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Topband-SolarEnergy-SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F88C7D562ECE93BB25B0D75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Topband-SolarEnergy-SDK/Pods-Topband-SolarEnergy-SDK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/TBDataBase/TBDataBase.framework",
+				"${BUILT_PRODUCTS_DIR}/Topband_Cloud_Device/Topband_Cloud_Device.framework",
+				"${BUILT_PRODUCTS_DIR}/Topband_Cloud_TBUser/Topband_Cloud_TBUser.framework",
+				"${BUILT_PRODUCTS_DIR}/tSmartSDK/tSmartSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBDataBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Topband_Cloud_Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Topband_Cloud_TBUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/tSmartSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Topband-SolarEnergy-SDK/Pods-Topband-SolarEnergy-SDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1891B8282086EA97009AD94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1891B86B2086EF90009AD94A /* TBEventMessage.m in Sources */,
+				1891B8592086ED13009AD94A /* TBSolarEnergyTables.m in Sources */,
+				18F529A42086F35100BD8AF5 /* TBPowerStationManager.m in Sources */,
+				1891B86E2086EF90009AD94A /* TBPowerStation.m in Sources */,
+				1891B8772086EFF0009AD94A /* TBEventMessage+TableCoding.m in Sources */,
+				1891B8562086ECBF009AD94A /* TBSolarEnergySDK.m in Sources */,
+				18F529C120871EF600BD8AF5 /* TBStatisticsDataModel.m in Sources */,
+				18F529C020871EF600BD8AF5 /* TBPowerStationRealData.m in Sources */,
+				1891B86D2086EF90009AD94A /* TBNotice.m in Sources */,
+				1891B8622086EEB8009AD94A /* TBSysUser+TableCoding.m in Sources */,
+				1891B86C2086EF90009AD94A /* TBPowerStationGateway.m in Sources */,
+				1891B85F2086EE93009AD94A /* TBSysUser.m in Sources */,
+				1891B8342086EA97009AD94A /* ViewController.m in Sources */,
+				18F529E3208744D100BD8AF5 /* TBEventMessage+Pull.m in Sources */,
+				18F529AB2086F6C700BD8AF5 /* TBPowerStationAccount+TableCoding.m in Sources */,
+				1891B8782086EFF0009AD94A /* TBPowerStation+TableCoding.m in Sources */,
+				18F529DC208732FD00BD8AF5 /* TBEventMessage+Extension.m in Sources */,
+				18F529CC208729BB00BD8AF5 /* TBPowerTotalGetCmd.m in Sources */,
+				1891B83F2086EA97009AD94A /* main.m in Sources */,
+				18F529CA2087295D00BD8AF5 /* TBPowerRateGetCmd.m in Sources */,
+				1891B8792086EFF0009AD94A /* TBNotice+TableCoding.m in Sources */,
+				1891B87A2086EFF0009AD94A /* TBPowerStationGateway+TableCoding.m in Sources */,
+				18F529E6208748CB00BD8AF5 /* TBNotice+Pull.m in Sources */,
+				1891B8312086EA97009AD94A /* AppDelegate.m in Sources */,
+				18F529BB20871E3500BD8AF5 /* TBPowerStation+Extension.m in Sources */,
+				18F529A82086F61100BD8AF5 /* TBPowerStationAccount.m in Sources */,
+				18F529D92087314200BD8AF5 /* TBNotice+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1891B8402086EA97009AD94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1891B8492086EA97009AD94A /* Topband_SolarEnergy_SDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1891B8462086EA97009AD94A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1891B82B2086EA97009AD94A /* Topband-SolarEnergy-SDK */;
+			targetProxy = 1891B8452086EA97009AD94A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1891B8352086EA97009AD94A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1891B8362086EA97009AD94A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1891B83A2086EA97009AD94A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1891B83B2086EA97009AD94A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1891B84B2086EA97009AD94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1891B84C2086EA97009AD94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1891B84E2086EA97009AD94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF04471CDDCE4559656DF67A /* Pods-Topband-SolarEnergy-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N328N2YE4V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Topband-SolarEnergy-SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.Topband-SolarEnergy-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1891B84F2086EA97009AD94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BBEF6825F057544C8B12ED /* Pods-Topband-SolarEnergy-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N328N2YE4V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Topband-SolarEnergy-SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.Topband-SolarEnergy-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1891B8512086EA97009AD94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = "Topband-SolarEnergy-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.Topband-SolarEnergy-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Topband-SolarEnergy-SDK.app/Topband-SolarEnergy-SDK";
+			};
+			name = Debug;
+		};
+		1891B8522086EA97009AD94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = "Topband-SolarEnergy-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.Topband-SolarEnergy-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Topband-SolarEnergy-SDK.app/Topband-SolarEnergy-SDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1891B8272086EA97009AD94A /* Build configuration list for PBXProject "Topband-SolarEnergy-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1891B84B2086EA97009AD94A /* Debug */,
+				1891B84C2086EA97009AD94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1891B84D2086EA97009AD94A /* Build configuration list for PBXNativeTarget "Topband-SolarEnergy-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1891B84E2086EA97009AD94A /* Debug */,
+				1891B84F2086EA97009AD94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1891B8502086EA97009AD94A /* Build configuration list for PBXNativeTarget "Topband-SolarEnergy-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1891B8512086EA97009AD94A /* Debug */,
+				1891B8522086EA97009AD94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1891B8242086EA97009AD94A /* Project object */;
+}

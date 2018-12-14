@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18CD4830207A1C9C0041EC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD482F207A1C9C0041EC30 /* AppDelegate.m */; };
+		18CD4833207A1C9C0041EC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4832207A1C9C0041EC30 /* ViewController.m */; };
+		18CD4836207A1C9C0041EC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD4834207A1C9C0041EC30 /* Main.storyboard */; };
+		18CD4838207A1C9C0041EC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CD4837207A1C9C0041EC30 /* Assets.xcassets */; };
+		18CD483B207A1C9C0041EC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD4839207A1C9C0041EC30 /* LaunchScreen.storyboard */; };
+		18CD483E207A1C9C0041EC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD483D207A1C9C0041EC30 /* main.m */; };
+		18CD4848207A1C9C0041EC30 /* TBUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4847207A1C9C0041EC30 /* TBUserTests.m */; };
+		18CD4856207A1F690041EC30 /* TBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4854207A1F630041EC30 /* TBUser.m */; };
+		18CD485D207A1F9F0041EC30 /* TBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD485C207A1F9C0041EC30 /* TBAccount.m */; };
+		18CD485E207A1FA20041EC30 /* TBLocalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD485A207A1F9B0041EC30 /* TBLocalAccount.m */; };
+		18CD4863207A1FBE0041EC30 /* TBLocalAccount+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4861207A1FBC0041EC30 /* TBLocalAccount+TableCoding.m */; };
+		18CD4864207A1FC10041EC30 /* TBAccount+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4860207A1FBC0041EC30 /* TBAccount+TableCoding.m */; };
+		18CD486A207AF9730041EC30 /* TBReadTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4867207AF96A0041EC30 /* TBReadTableManager.m */; };
+		18CD486B207AF9750041EC30 /* TBReadTableTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4869207AF96A0041EC30 /* TBReadTableTask.m */; };
+		18CD486E207B00BD0041EC30 /* TBQueryDataCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD486D207B00B50041EC30 /* TBQueryDataCmd.m */; };
+		18CD4874207B170F0041EC30 /* TBUserNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4873207B170F0041EC30 /* TBUserNotifications.m */; };
+		18CD4877207B3AB10041EC30 /* TBLogoutCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4876207B3AB10041EC30 /* TBLogoutCmd.m */; };
+		18CD487A207B3E210041EC30 /* TBTokenReportCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD4879207B3E210041EC30 /* TBTokenReportCmd.m */; };
+		18EE4FC2209178F600CF4846 /* TBFamilyUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE4FC0209178F200CF4846 /* TBFamilyUser.m */; };
+		18EE4FC52091790C00CF4846 /* TBFamilyUser+TableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE4FC42091790900CF4846 /* TBFamilyUser+TableCoding.m */; };
+		18F529D420872B8000BD8AF5 /* TBQueryDataUpOrDownCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529D320872B8000BD8AF5 /* TBQueryDataUpOrDownCmd.m */; };
+		18F529D520872BF900BD8AF5 /* TBMessagePull.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F529CF20872B0700BD8AF5 /* TBMessagePull.m */; };
+		18FA6D67207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6D66207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.m */; };
+		18FA6D6A207B405F00D7EC65 /* TBGeneratorCodeCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6D69207B405F00D7EC65 /* TBGeneratorCodeCmd.m */; };
+		18FA6D6D207B411800D7EC65 /* TBRegisterAccountCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6D6C207B411800D7EC65 /* TBRegisterAccountCmd.m */; };
+		18FA6D70207B418100D7EC65 /* TBResetPasswordCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6D6F207B418100D7EC65 /* TBResetPasswordCmd.m */; };
+		18FA6D73207B420D00D7EC65 /* TBModifyPasswordCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6D72207B420D00D7EC65 /* TBModifyPasswordCmd.m */; };
+		DAC86FBB126C81AB4A49ED6B /* Pods_TBUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D042CCB2F14EA4D9B6A20121 /* Pods_TBUser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CD4844207A1C9C0041EC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CD4823207A1C9C0041EC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CD482A207A1C9C0041EC30;
+			remoteInfo = TBUser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18CD482B207A1C9C0041EC30 /* TBUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CD482E207A1C9C0041EC30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18CD482F207A1C9C0041EC30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18CD4831207A1C9C0041EC30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18CD4832207A1C9C0041EC30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18CD4835207A1C9C0041EC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18CD4837207A1C9C0041EC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CD483A207A1C9C0041EC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18CD483C207A1C9C0041EC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CD483D207A1C9C0041EC30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18CD4843207A1C9C0041EC30 /* TBUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CD4847207A1C9C0041EC30 /* TBUserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBUserTests.m; sourceTree = "<group>"; };
+		18CD4849207A1C9C0041EC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CD4854207A1F630041EC30 /* TBUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBUser.m; sourceTree = "<group>"; };
+		18CD4855207A1F630041EC30 /* TBUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBUser.h; sourceTree = "<group>"; };
+		18CD4859207A1F9B0041EC30 /* TBLocalAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBLocalAccount.h; sourceTree = "<group>"; };
+		18CD485A207A1F9B0041EC30 /* TBLocalAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBLocalAccount.m; sourceTree = "<group>"; };
+		18CD485B207A1F9B0041EC30 /* TBAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBAccount.h; sourceTree = "<group>"; };
+		18CD485C207A1F9C0041EC30 /* TBAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAccount.m; sourceTree = "<group>"; };
+		18CD485F207A1FBC0041EC30 /* TBLocalAccount+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBLocalAccount+TableCoding.h"; sourceTree = "<group>"; };
+		18CD4860207A1FBC0041EC30 /* TBAccount+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBAccount+TableCoding.m"; sourceTree = "<group>"; };
+		18CD4861207A1FBC0041EC30 /* TBLocalAccount+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBLocalAccount+TableCoding.m"; sourceTree = "<group>"; };
+		18CD4862207A1FBC0041EC30 /* TBAccount+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBAccount+TableCoding.h"; sourceTree = "<group>"; };
+		18CD4866207AF96A0041EC30 /* TBReadTableManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBReadTableManager.h; sourceTree = "<group>"; };
+		18CD4867207AF96A0041EC30 /* TBReadTableManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBReadTableManager.m; sourceTree = "<group>"; };
+		18CD4868207AF96A0041EC30 /* TBReadTableTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBReadTableTask.h; sourceTree = "<group>"; };
+		18CD4869207AF96A0041EC30 /* TBReadTableTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBReadTableTask.m; sourceTree = "<group>"; };
+		18CD486C207B00B50041EC30 /* TBQueryDataCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBQueryDataCmd.h; sourceTree = "<group>"; };
+		18CD486D207B00B50041EC30 /* TBQueryDataCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBQueryDataCmd.m; sourceTree = "<group>"; };
+		18CD4872207B170F0041EC30 /* TBUserNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBUserNotifications.h; sourceTree = "<group>"; };
+		18CD4873207B170F0041EC30 /* TBUserNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBUserNotifications.m; sourceTree = "<group>"; };
+		18CD4875207B3AB10041EC30 /* TBLogoutCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBLogoutCmd.h; sourceTree = "<group>"; };
+		18CD4876207B3AB10041EC30 /* TBLogoutCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBLogoutCmd.m; sourceTree = "<group>"; };
+		18CD4878207B3E210041EC30 /* TBTokenReportCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTokenReportCmd.h; sourceTree = "<group>"; };
+		18CD4879207B3E210041EC30 /* TBTokenReportCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTokenReportCmd.m; sourceTree = "<group>"; };
+		18EE4FC0209178F200CF4846 /* TBFamilyUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBFamilyUser.m; sourceTree = "<group>"; };
+		18EE4FC1209178F200CF4846 /* TBFamilyUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBFamilyUser.h; sourceTree = "<group>"; };
+		18EE4FC32091790900CF4846 /* TBFamilyUser+TableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBFamilyUser+TableCoding.h"; sourceTree = "<group>"; };
+		18EE4FC42091790900CF4846 /* TBFamilyUser+TableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBFamilyUser+TableCoding.m"; sourceTree = "<group>"; };
+		18F529CE20872B0700BD8AF5 /* TBMessagePull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBMessagePull.h; sourceTree = "<group>"; };
+		18F529CF20872B0700BD8AF5 /* TBMessagePull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBMessagePull.m; sourceTree = "<group>"; };
+		18F529D020872B4800BD8AF5 /* TBQueryDataUpOrDownCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBQueryDataUpOrDownCmd.h; sourceTree = "<group>"; };
+		18F529D320872B8000BD8AF5 /* TBQueryDataUpOrDownCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBQueryDataUpOrDownCmd.m; sourceTree = "<group>"; };
+		18F529D620872CB000BD8AF5 /* TBMessagePullObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBMessagePullObject.h; sourceTree = "<group>"; };
+		18FA6D65207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBModifyAccountNicknameCmd.h; sourceTree = "<group>"; };
+		18FA6D66207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBModifyAccountNicknameCmd.m; sourceTree = "<group>"; };
+		18FA6D68207B405F00D7EC65 /* TBGeneratorCodeCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBGeneratorCodeCmd.h; sourceTree = "<group>"; };
+		18FA6D69207B405F00D7EC65 /* TBGeneratorCodeCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBGeneratorCodeCmd.m; sourceTree = "<group>"; };
+		18FA6D6B207B411800D7EC65 /* TBRegisterAccountCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBRegisterAccountCmd.h; sourceTree = "<group>"; };
+		18FA6D6C207B411800D7EC65 /* TBRegisterAccountCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBRegisterAccountCmd.m; sourceTree = "<group>"; };
+		18FA6D6E207B418100D7EC65 /* TBResetPasswordCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBResetPasswordCmd.h; sourceTree = "<group>"; };
+		18FA6D6F207B418100D7EC65 /* TBResetPasswordCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBResetPasswordCmd.m; sourceTree = "<group>"; };
+		18FA6D71207B420D00D7EC65 /* TBModifyPasswordCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBModifyPasswordCmd.h; sourceTree = "<group>"; };
+		18FA6D72207B420D00D7EC65 /* TBModifyPasswordCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBModifyPasswordCmd.m; sourceTree = "<group>"; };
+		8C869B5E093B3BE90AF3BD68 /* Pods-TBUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBUser/Pods-TBUser.release.xcconfig"; sourceTree = "<group>"; };
+		D042CCB2F14EA4D9B6A20121 /* Pods_TBUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF48C4075A1E73EFDBDB879 /* Pods-TBUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBUser/Pods-TBUser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18CD4828207A1C9C0041EC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC86FBB126C81AB4A49ED6B /* Pods_TBUser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD4840207A1C9C0041EC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B97EA6D27976CAD48EF88E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D042CCB2F14EA4D9B6A20121 /* Pods_TBUser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18CD4822207A1C9C0041EC30 = {
+			isa = PBXGroup;
+			children = (
+				18CD4852207A1CC30041EC30 /* Source */,
+				18CD482D207A1C9C0041EC30 /* TBUser */,
+				18CD4846207A1C9C0041EC30 /* TBUserTests */,
+				18CD482C207A1C9C0041EC30 /* Products */,
+				C3879C8DEF3BEB9694D99049 /* Pods */,
+				0B97EA6D27976CAD48EF88E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18CD482C207A1C9C0041EC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CD482B207A1C9C0041EC30 /* TBUser.app */,
+				18CD4843207A1C9C0041EC30 /* TBUserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18CD482D207A1C9C0041EC30 /* TBUser */ = {
+			isa = PBXGroup;
+			children = (
+				18CD482E207A1C9C0041EC30 /* AppDelegate.h */,
+				18CD482F207A1C9C0041EC30 /* AppDelegate.m */,
+				18CD4831207A1C9C0041EC30 /* ViewController.h */,
+				18CD4832207A1C9C0041EC30 /* ViewController.m */,
+				18CD4834207A1C9C0041EC30 /* Main.storyboard */,
+				18CD4837207A1C9C0041EC30 /* Assets.xcassets */,
+				18CD4839207A1C9C0041EC30 /* LaunchScreen.storyboard */,
+				18CD483C207A1C9C0041EC30 /* Info.plist */,
+				18CD483D207A1C9C0041EC30 /* main.m */,
+			);
+			path = TBUser;
+			sourceTree = "<group>";
+		};
+		18CD4846207A1C9C0041EC30 /* TBUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CD4847207A1C9C0041EC30 /* TBUserTests.m */,
+				18CD4849207A1C9C0041EC30 /* Info.plist */,
+			);
+			path = TBUserTests;
+			sourceTree = "<group>";
+		};
+		18CD4852207A1CC30041EC30 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18F529CD20872AF700BD8AF5 /* Pull */,
+				18CD4865207AF96A0041EC30 /* ServerTableSync */,
+				18CD4858207A1F7C0041EC30 /* Database */,
+				18CD4857207A1F740041EC30 /* Models */,
+				18CD4853207A1F4C0041EC30 /* Cmds */,
+				18CD4855207A1F630041EC30 /* TBUser.h */,
+				18CD4854207A1F630041EC30 /* TBUser.m */,
+				18CD4872207B170F0041EC30 /* TBUserNotifications.h */,
+				18CD4873207B170F0041EC30 /* TBUserNotifications.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18CD4853207A1F4C0041EC30 /* Cmds */ = {
+			isa = PBXGroup;
+			children = (
+				18F529D020872B4800BD8AF5 /* TBQueryDataUpOrDownCmd.h */,
+				18F529D320872B8000BD8AF5 /* TBQueryDataUpOrDownCmd.m */,
+				18CD486C207B00B50041EC30 /* TBQueryDataCmd.h */,
+				18CD486D207B00B50041EC30 /* TBQueryDataCmd.m */,
+				18CD4875207B3AB10041EC30 /* TBLogoutCmd.h */,
+				18CD4876207B3AB10041EC30 /* TBLogoutCmd.m */,
+				18CD4878207B3E210041EC30 /* TBTokenReportCmd.h */,
+				18CD4879207B3E210041EC30 /* TBTokenReportCmd.m */,
+				18FA6D65207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.h */,
+				18FA6D66207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.m */,
+				18FA6D68207B405F00D7EC65 /* TBGeneratorCodeCmd.h */,
+				18FA6D69207B405F00D7EC65 /* TBGeneratorCodeCmd.m */,
+				18FA6D6B207B411800D7EC65 /* TBRegisterAccountCmd.h */,
+				18FA6D6C207B411800D7EC65 /* TBRegisterAccountCmd.m */,
+				18FA6D6E207B418100D7EC65 /* TBResetPasswordCmd.h */,
+				18FA6D6F207B418100D7EC65 /* TBResetPasswordCmd.m */,
+				18FA6D71207B420D00D7EC65 /* TBModifyPasswordCmd.h */,
+				18FA6D72207B420D00D7EC65 /* TBModifyPasswordCmd.m */,
+			);
+			path = Cmds;
+			sourceTree = "<group>";
+		};
+		18CD4857207A1F740041EC30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18EE4FBE209178D900CF4846 /* Server */,
+				18CD485B207A1F9B0041EC30 /* TBAccount.h */,
+				18CD485C207A1F9C0041EC30 /* TBAccount.m */,
+				18CD4859207A1F9B0041EC30 /* TBLocalAccount.h */,
+				18CD485A207A1F9B0041EC30 /* TBLocalAccount.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18CD4858207A1F7C0041EC30 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				18EE4FBF209178E400CF4846 /* Server */,
+				18CD485F207A1FBC0041EC30 /* TBLocalAccount+TableCoding.h */,
+				18CD4861207A1FBC0041EC30 /* TBLocalAccount+TableCoding.m */,
+				18CD4862207A1FBC0041EC30 /* TBAccount+TableCoding.h */,
+				18CD4860207A1FBC0041EC30 /* TBAccount+TableCoding.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		18CD4865207AF96A0041EC30 /* ServerTableSync */ = {
+			isa = PBXGroup;
+			children = (
+				18CD4866207AF96A0041EC30 /* TBReadTableManager.h */,
+				18CD4867207AF96A0041EC30 /* TBReadTableManager.m */,
+				18CD4868207AF96A0041EC30 /* TBReadTableTask.h */,
+				18CD4869207AF96A0041EC30 /* TBReadTableTask.m */,
+			);
+			path = ServerTableSync;
+			sourceTree = "<group>";
+		};
+		18EE4FBE209178D900CF4846 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				18EE4FC1209178F200CF4846 /* TBFamilyUser.h */,
+				18EE4FC0209178F200CF4846 /* TBFamilyUser.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		18EE4FBF209178E400CF4846 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				18EE4FC32091790900CF4846 /* TBFamilyUser+TableCoding.h */,
+				18EE4FC42091790900CF4846 /* TBFamilyUser+TableCoding.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		18F529CD20872AF700BD8AF5 /* Pull */ = {
+			isa = PBXGroup;
+			children = (
+				18F529D620872CB000BD8AF5 /* TBMessagePullObject.h */,
+				18F529CE20872B0700BD8AF5 /* TBMessagePull.h */,
+				18F529CF20872B0700BD8AF5 /* TBMessagePull.m */,
+			);
+			path = Pull;
+			sourceTree = "<group>";
+		};
+		C3879C8DEF3BEB9694D99049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBF48C4075A1E73EFDBDB879 /* Pods-TBUser.debug.xcconfig */,
+				8C869B5E093B3BE90AF3BD68 /* Pods-TBUser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18CD482A207A1C9C0041EC30 /* TBUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CD484C207A1C9C0041EC30 /* Build configuration list for PBXNativeTarget "TBUser" */;
+			buildPhases = (
+				F51E2E415BB54706E5CB3A7C /* [CP] Check Pods Manifest.lock */,
+				18CD4827207A1C9C0041EC30 /* Sources */,
+				18CD4828207A1C9C0041EC30 /* Frameworks */,
+				18CD4829207A1C9C0041EC30 /* Resources */,
+				73AAA1BDC1567F4E9E7DCD55 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBUser;
+			productName = TBUser;
+			productReference = 18CD482B207A1C9C0041EC30 /* TBUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18CD4842207A1C9C0041EC30 /* TBUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CD484F207A1C9C0041EC30 /* Build configuration list for PBXNativeTarget "TBUserTests" */;
+			buildPhases = (
+				18CD483F207A1C9C0041EC30 /* Sources */,
+				18CD4840207A1C9C0041EC30 /* Frameworks */,
+				18CD4841207A1C9C0041EC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CD4845207A1C9C0041EC30 /* PBXTargetDependency */,
+			);
+			name = TBUserTests;
+			productName = TBUserTests;
+			productReference = 18CD4843207A1C9C0041EC30 /* TBUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18CD4823207A1C9C0041EC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Ramon;
+				TargetAttributes = {
+					18CD482A207A1C9C0041EC30 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					18CD4842207A1C9C0041EC30 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18CD482A207A1C9C0041EC30;
+					};
+				};
+			};
+			buildConfigurationList = 18CD4826207A1C9C0041EC30 /* Build configuration list for PBXProject "TBUser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18CD4822207A1C9C0041EC30;
+			productRefGroup = 18CD482C207A1C9C0041EC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18CD482A207A1C9C0041EC30 /* TBUser */,
+				18CD4842207A1C9C0041EC30 /* TBUserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18CD4829207A1C9C0041EC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CD483B207A1C9C0041EC30 /* LaunchScreen.storyboard in Resources */,
+				18CD4838207A1C9C0041EC30 /* Assets.xcassets in Resources */,
+				18CD4836207A1C9C0041EC30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD4841207A1C9C0041EC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73AAA1BDC1567F4E9E7DCD55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TBUser/Pods-TBUser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/TBDataBase/TBDataBase.framework",
+				"${BUILT_PRODUCTS_DIR}/tSmartSDK/tSmartSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBDataBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/tSmartSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBUser/Pods-TBUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51E2E415BB54706E5CB3A7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBUser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CD4827207A1C9C0041EC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FA6D67207B3F6900D7EC65 /* TBModifyAccountNicknameCmd.m in Sources */,
+				18CD486E207B00BD0041EC30 /* TBQueryDataCmd.m in Sources */,
+				18CD4856207A1F690041EC30 /* TBUser.m in Sources */,
+				18CD4877207B3AB10041EC30 /* TBLogoutCmd.m in Sources */,
+				18EE4FC2209178F600CF4846 /* TBFamilyUser.m in Sources */,
+				18FA6D73207B420D00D7EC65 /* TBModifyPasswordCmd.m in Sources */,
+				18CD486A207AF9730041EC30 /* TBReadTableManager.m in Sources */,
+				18CD487A207B3E210041EC30 /* TBTokenReportCmd.m in Sources */,
+				18CD485E207A1FA20041EC30 /* TBLocalAccount.m in Sources */,
+				18F529D520872BF900BD8AF5 /* TBMessagePull.m in Sources */,
+				18FA6D70207B418100D7EC65 /* TBResetPasswordCmd.m in Sources */,
+				18CD4833207A1C9C0041EC30 /* ViewController.m in Sources */,
+				18CD483E207A1C9C0041EC30 /* main.m in Sources */,
+				18F529D420872B8000BD8AF5 /* TBQueryDataUpOrDownCmd.m in Sources */,
+				18CD486B207AF9750041EC30 /* TBReadTableTask.m in Sources */,
+				18EE4FC52091790C00CF4846 /* TBFamilyUser+TableCoding.m in Sources */,
+				18CD4874207B170F0041EC30 /* TBUserNotifications.m in Sources */,
+				18FA6D6D207B411800D7EC65 /* TBRegisterAccountCmd.m in Sources */,
+				18FA6D6A207B405F00D7EC65 /* TBGeneratorCodeCmd.m in Sources */,
+				18CD4864207A1FC10041EC30 /* TBAccount+TableCoding.m in Sources */,
+				18CD4863207A1FBE0041EC30 /* TBLocalAccount+TableCoding.m in Sources */,
+				18CD4830207A1C9C0041EC30 /* AppDelegate.m in Sources */,
+				18CD485D207A1F9F0041EC30 /* TBAccount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD483F207A1C9C0041EC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CD4848207A1C9C0041EC30 /* TBUserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CD4845207A1C9C0041EC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CD482A207A1C9C0041EC30 /* TBUser */;
+			targetProxy = 18CD4844207A1C9C0041EC30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18CD4834207A1C9C0041EC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CD4835207A1C9C0041EC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18CD4839207A1C9C0041EC30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CD483A207A1C9C0041EC30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18CD484A207A1C9C0041EC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18CD484B207A1C9C0041EC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18CD484D207A1C9C0041EC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF48C4075A1E73EFDBDB879 /* Pods-TBUser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = TBUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.TBUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18CD484E207A1C9C0041EC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C869B5E093B3BE90AF3BD68 /* Pods-TBUser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = TBUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.TBUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18CD4850207A1C9C0041EC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = TBUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.TBUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBUser.app/TBUser";
+			};
+			name = Debug;
+		};
+		18CD4851207A1C9C0041EC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8Z58836CP;
+				INFOPLIST_FILE = TBUserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.TBUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBUser.app/TBUser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18CD4826207A1C9C0041EC30 /* Build configuration list for PBXProject "TBUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD484A207A1C9C0041EC30 /* Debug */,
+				18CD484B207A1C9C0041EC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CD484C207A1C9C0041EC30 /* Build configuration list for PBXNativeTarget "TBUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD484D207A1C9C0041EC30 /* Debug */,
+				18CD484E207A1C9C0041EC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CD484F207A1C9C0041EC30 /* Build configuration list for PBXNativeTarget "TBUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD4850207A1C9C0041EC30 /* Debug */,
+				18CD4851207A1C9C0041EC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18CD4823207A1C9C0041EC30 /* Project object */;
+}

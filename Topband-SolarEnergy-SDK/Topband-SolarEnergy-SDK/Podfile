@@ -1,0 +1,19 @@
+use_frameworks!
+
+platform:ios, '8.0'
+
+source 'git@192.168.3.56:ios/TopbandSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Topband-SolarEnergy-SDK' do
+	pod 'Topband_Cloud_TBUser'
+    pod 'Topband_Cloud_Device'
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end

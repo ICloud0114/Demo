@@ -1,0 +1,12 @@
+use_frameworks!
+
+source 'git@192.168.3.56:ios/TopbandSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios, '8.0'
+
+target 'TBUser' do
+	pod 'TBDataBase'
+	pod 'tSmartSDK'
+    pod 'MJExtension'
+end
