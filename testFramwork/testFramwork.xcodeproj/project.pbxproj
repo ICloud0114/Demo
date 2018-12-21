@@ -59,6 +59,32 @@
 		1A11FF9121C3585E00FDFA9C /* SysUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A11FF7821C3585E00FDFA9C /* SysUser.m */; };
 		1A11FF9221C3585E00FDFA9C /* TBDeviceProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A11FF7921C3585E00FDFA9C /* TBDeviceProperty.m */; };
 		1A11FF9321C3585E00FDFA9C /* TBDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A11FF7A21C3585E00FDFA9C /* TBDevice.m */; };
+		1A2EA33D21C74A57009BE023 /* DeviceShareCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30421C74A57009BE023 /* DeviceShareCmd.m */; };
+		1A2EA33E21C74A57009BE023 /* RequestTemporaryPasswordCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30621C74A57009BE023 /* RequestTemporaryPasswordCmd.m */; };
+		1A2EA33F21C74A57009BE023 /* DeleteFamilyCardGuardianCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30821C74A57009BE023 /* DeleteFamilyCardGuardianCmd.m */; };
+		1A2EA34021C74A57009BE023 /* UnbindFamilyCardCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30921C74A57009BE023 /* UnbindFamilyCardCmd.m */; };
+		1A2EA34121C74A57009BE023 /* BindFamilyCardCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30B21C74A57009BE023 /* BindFamilyCardCmd.m */; };
+		1A2EA34221C74A57009BE023 /* UpdateCardPhoneCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA30C21C74A57009BE023 /* UpdateCardPhoneCmd.m */; };
+		1A2EA34321C74A57009BE023 /* GetCardUsersCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31021C74A57009BE023 /* GetCardUsersCmd.m */; };
+		1A2EA34421C74A57009BE023 /* LockNotifyReadedCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31421C74A57009BE023 /* LockNotifyReadedCmd.m */; };
+		1A2EA34521C74A57009BE023 /* UpdateDeviceNameCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31621C74A57009BE023 /* UpdateDeviceNameCmd.m */; };
+		1A2EA34621C74A57009BE023 /* DeleteLockUserCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31921C74A57009BE023 /* DeleteLockUserCmd.m */; };
+		1A2EA34721C74A57009BE023 /* SettingReportLockRemindCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31B21C74A57009BE023 /* SettingReportLockRemindCmd.m */; };
+		1A2EA34821C74A57009BE023 /* ModifyLockUserNicknameCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31D21C74A57009BE023 /* ModifyLockUserNicknameCmd.m */; };
+		1A2EA34921C74A57009BE023 /* DeviceShareConfirmCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA31F21C74A57009BE023 /* DeviceShareConfirmCmd.m */; };
+		1A2EA34A21C74A57009BE023 /* UnbindDeviceCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32021C74A57009BE023 /* UnbindDeviceCmd.m */; };
+		1A2EA34B21C74A57009BE023 /* UpgradeLockCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32321C74A57009BE023 /* UpgradeLockCmd.m */; };
+		1A2EA34C21C74A57009BE023 /* BindLockCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32421C74A57009BE023 /* BindLockCmd.m */; };
+		1A2EA34D21C74A57009BE023 /* UpdateShareUserNickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32521C74A57009BE023 /* UpdateShareUserNickname.m */; };
+		1A2EA34E21C74A57009BE023 /* LockResetCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32721C74A57009BE023 /* LockResetCmd.m */; };
+		1A2EA34F21C74A57009BE023 /* ResetPasswordCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32B21C74A57009BE023 /* ResetPasswordCmd.m */; };
+		1A2EA35121C74A57009BE023 /* ModifyUserAccountCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA32F21C74A57009BE023 /* ModifyUserAccountCmd.m */; };
+		1A2EA35221C74A57009BE023 /* ModifyPasswordCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33221C74A57009BE023 /* ModifyPasswordCmd.m */; };
+		1A2EA35321C74A57009BE023 /* GeneratorCodeCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33321C74A57009BE023 /* GeneratorCodeCmd.m */; };
+		1A2EA35521C74A57009BE023 /* ModifyUserNicknameCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33721C74A57009BE023 /* ModifyUserNicknameCmd.m */; };
+		1A2EA35621C74A57009BE023 /* RegisterAccountCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33821C74A57009BE023 /* RegisterAccountCmd.m */; };
+		1A2EA35721C74A57009BE023 /* UploadHeadPortraitCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33921C74A57009BE023 /* UploadHeadPortraitCmd.m */; };
+		1A2EA35821C74A57009BE023 /* CheckSMSCodeCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EA33A21C74A57009BE023 /* CheckSMSCodeCmd.m */; };
 		1A65EA2C21BFBC9D00667FA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A65EA2B21BFBC9D00667FA9 /* AppDelegate.m */; };
 		1A65EA2F21BFBC9D00667FA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A65EA2E21BFBC9D00667FA9 /* ViewController.m */; };
 		1A65EA3221BFBC9D00667FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A65EA3021BFBC9D00667FA9 /* Main.storyboard */; };
@@ -177,6 +203,58 @@
 		1A11FF7E21C3585E00FDFA9C /* TBAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAccount.h; sourceTree = "<group>"; };
 		1A11FF9421C3588E00FDFA9C /* testFramwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testFramwork-Prefix.pch"; sourceTree = "<group>"; };
 		1A11FF9621C35E5100FDFA9C /* SingletionClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletionClass.h; sourceTree = "<group>"; };
+		1A2EA30321C74A57009BE023 /* ModifyLockUserNicknameCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyLockUserNicknameCmd.h; sourceTree = "<group>"; };
+		1A2EA30421C74A57009BE023 /* DeviceShareCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceShareCmd.m; sourceTree = "<group>"; };
+		1A2EA30521C74A57009BE023 /* SettingReportLockRemindCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingReportLockRemindCmd.h; sourceTree = "<group>"; };
+		1A2EA30621C74A57009BE023 /* RequestTemporaryPasswordCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTemporaryPasswordCmd.m; sourceTree = "<group>"; };
+		1A2EA30821C74A57009BE023 /* DeleteFamilyCardGuardianCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteFamilyCardGuardianCmd.m; sourceTree = "<group>"; };
+		1A2EA30921C74A57009BE023 /* UnbindFamilyCardCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnbindFamilyCardCmd.m; sourceTree = "<group>"; };
+		1A2EA30A21C74A57009BE023 /* GetCardUsersCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCardUsersCmd.h; sourceTree = "<group>"; };
+		1A2EA30B21C74A57009BE023 /* BindFamilyCardCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindFamilyCardCmd.m; sourceTree = "<group>"; };
+		1A2EA30C21C74A57009BE023 /* UpdateCardPhoneCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateCardPhoneCmd.m; sourceTree = "<group>"; };
+		1A2EA30D21C74A57009BE023 /* UnbindFamilyCardCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnbindFamilyCardCmd.h; sourceTree = "<group>"; };
+		1A2EA30E21C74A57009BE023 /* DeleteFamilyCardGuardianCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteFamilyCardGuardianCmd.h; sourceTree = "<group>"; };
+		1A2EA30F21C74A57009BE023 /* BindFamilyCardCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindFamilyCardCmd.h; sourceTree = "<group>"; };
+		1A2EA31021C74A57009BE023 /* GetCardUsersCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCardUsersCmd.m; sourceTree = "<group>"; };
+		1A2EA31121C74A57009BE023 /* UpdateCardPhoneCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCardPhoneCmd.h; sourceTree = "<group>"; };
+		1A2EA31221C74A57009BE023 /* UnbindDeviceCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnbindDeviceCmd.h; sourceTree = "<group>"; };
+		1A2EA31321C74A57009BE023 /* DeviceShareConfirmCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceShareConfirmCmd.h; sourceTree = "<group>"; };
+		1A2EA31421C74A57009BE023 /* LockNotifyReadedCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockNotifyReadedCmd.m; sourceTree = "<group>"; };
+		1A2EA31521C74A57009BE023 /* UpgradeLockCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeLockCmd.h; sourceTree = "<group>"; };
+		1A2EA31621C74A57009BE023 /* UpdateDeviceNameCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateDeviceNameCmd.m; sourceTree = "<group>"; };
+		1A2EA31721C74A57009BE023 /* LockResetCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockResetCmd.h; sourceTree = "<group>"; };
+		1A2EA31821C74A57009BE023 /* UpdateShareUserNickname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateShareUserNickname.h; sourceTree = "<group>"; };
+		1A2EA31921C74A57009BE023 /* DeleteLockUserCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteLockUserCmd.m; sourceTree = "<group>"; };
+		1A2EA31A21C74A57009BE023 /* BindLockCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindLockCmd.h; sourceTree = "<group>"; };
+		1A2EA31B21C74A57009BE023 /* SettingReportLockRemindCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingReportLockRemindCmd.m; sourceTree = "<group>"; };
+		1A2EA31C21C74A57009BE023 /* DeviceShareCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceShareCmd.h; sourceTree = "<group>"; };
+		1A2EA31D21C74A57009BE023 /* ModifyLockUserNicknameCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyLockUserNicknameCmd.m; sourceTree = "<group>"; };
+		1A2EA31E21C74A57009BE023 /* LockNotifyReadedCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockNotifyReadedCmd.h; sourceTree = "<group>"; };
+		1A2EA31F21C74A57009BE023 /* DeviceShareConfirmCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceShareConfirmCmd.m; sourceTree = "<group>"; };
+		1A2EA32021C74A57009BE023 /* UnbindDeviceCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnbindDeviceCmd.m; sourceTree = "<group>"; };
+		1A2EA32121C74A57009BE023 /* RequestTemporaryPasswordCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTemporaryPasswordCmd.h; sourceTree = "<group>"; };
+		1A2EA32221C74A57009BE023 /* UpdateDeviceNameCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateDeviceNameCmd.h; sourceTree = "<group>"; };
+		1A2EA32321C74A57009BE023 /* UpgradeLockCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeLockCmd.m; sourceTree = "<group>"; };
+		1A2EA32421C74A57009BE023 /* BindLockCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindLockCmd.m; sourceTree = "<group>"; };
+		1A2EA32521C74A57009BE023 /* UpdateShareUserNickname.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateShareUserNickname.m; sourceTree = "<group>"; };
+		1A2EA32621C74A57009BE023 /* DeleteLockUserCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteLockUserCmd.h; sourceTree = "<group>"; };
+		1A2EA32721C74A57009BE023 /* LockResetCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockResetCmd.m; sourceTree = "<group>"; };
+		1A2EA32A21C74A57009BE023 /* ModifyUserNicknameCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyUserNicknameCmd.h; sourceTree = "<group>"; };
+		1A2EA32B21C74A57009BE023 /* ResetPasswordCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordCmd.m; sourceTree = "<group>"; };
+		1A2EA32D21C74A57009BE023 /* GeneratorCodeCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorCodeCmd.h; sourceTree = "<group>"; };
+		1A2EA32E21C74A57009BE023 /* RegisterAccountCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountCmd.h; sourceTree = "<group>"; };
+		1A2EA32F21C74A57009BE023 /* ModifyUserAccountCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyUserAccountCmd.m; sourceTree = "<group>"; };
+		1A2EA33021C74A57009BE023 /* CheckSMSCodeCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckSMSCodeCmd.h; sourceTree = "<group>"; };
+		1A2EA33121C74A57009BE023 /* UploadHeadPortraitCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadHeadPortraitCmd.h; sourceTree = "<group>"; };
+		1A2EA33221C74A57009BE023 /* ModifyPasswordCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordCmd.m; sourceTree = "<group>"; };
+		1A2EA33321C74A57009BE023 /* GeneratorCodeCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorCodeCmd.m; sourceTree = "<group>"; };
+		1A2EA33521C74A57009BE023 /* ResetPasswordCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordCmd.h; sourceTree = "<group>"; };
+		1A2EA33721C74A57009BE023 /* ModifyUserNicknameCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyUserNicknameCmd.m; sourceTree = "<group>"; };
+		1A2EA33821C74A57009BE023 /* RegisterAccountCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountCmd.m; sourceTree = "<group>"; };
+		1A2EA33921C74A57009BE023 /* UploadHeadPortraitCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadHeadPortraitCmd.m; sourceTree = "<group>"; };
+		1A2EA33A21C74A57009BE023 /* CheckSMSCodeCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckSMSCodeCmd.m; sourceTree = "<group>"; };
+		1A2EA33B21C74A57009BE023 /* ModifyUserAccountCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyUserAccountCmd.h; sourceTree = "<group>"; };
+		1A2EA33C21C74A57009BE023 /* ModifyPasswordCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordCmd.h; sourceTree = "<group>"; };
 		1A65EA2721BFBC9D00667FA9 /* testFramwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFramwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A65EA2A21BFBC9D00667FA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A65EA2B21BFBC9D00667FA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -214,6 +292,8 @@
 				1A1100B221C3891600FDFA9C /* QueryDataUpOrDownCmd.h */,
 				1A1100B921C3891600FDFA9C /* QueryDataUpOrDownCmd.m */,
 				1A1100B521C3891600FDFA9C /* TBCmds.h */,
+				1A2EA30221C74A57009BE023 /* LockCmds */,
+				1A2EA32821C74A57009BE023 /* User */,
 			);
 			path = Cmds;
 			sourceTree = "<group>";
@@ -233,21 +313,15 @@
 				1A11FEC121C357A600FDFA9C /* Tables.h */,
 				1A11FE9E21C357A600FDFA9C /* Tables.m */,
 				1A11FE9F21C357A600FDFA9C /* NSUserDefaults+Cache.h */,
-				1A11FEA021C357A600FDFA9C /* TBDeviceProperty+TableCoding.h */,
-				1A11FEA121C357A600FDFA9C /* TBDevice+TableCoding.m */,
-				1A11FEA221C357A600FDFA9C /* Lock */,
+				1A11FEC521C357A600FDFA9C /* NSUserDefaults+Cache.m */,
 				1A11FEB721C357A600FDFA9C /* TBStorage.h */,
-				1A11FEB821C357A600FDFA9C /* TBGateway+TableCoding.h */,
+				1A11FECB21C357A600FDFA9C /* TBStorage.m */,
+				1A11FEC921C357A600FDFA9C /* TBDatabaseManager.h */,
 				1A11FEB921C357A600FDFA9C /* TBDatabaseManager.m */,
+				1A11FEA221C357A600FDFA9C /* Lock */,
 				1A11FEBA21C357A600FDFA9C /* Local */,
 				1A11FEC221C357A600FDFA9C /* Sys */,
-				1A11FEC521C357A600FDFA9C /* NSUserDefaults+Cache.m */,
 				1A11FEC621C357A600FDFA9C /* TableCoding.h */,
-				1A11FEC721C357A600FDFA9C /* TBDevice+TableCoding.h */,
-				1A11FEC821C357A600FDFA9C /* TBDeviceProperty+TableCoding.m */,
-				1A11FEC921C357A600FDFA9C /* TBDatabaseManager.h */,
-				1A11FECA21C357A600FDFA9C /* TBGateway+TableCoding.m */,
-				1A11FECB21C357A600FDFA9C /* TBStorage.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -255,26 +329,32 @@
 		1A11FEA221C357A600FDFA9C /* Lock */ = {
 			isa = PBXGroup;
 			children = (
-				1A11FEA321C357A600FDFA9C /* TBMessage+TableCoding.m */,
+				1A11FEB821C357A600FDFA9C /* TBGateway+TableCoding.h */,
+				1A11FECA21C357A600FDFA9C /* TBGateway+TableCoding.m */,
+				1A11FEA021C357A600FDFA9C /* TBDeviceProperty+TableCoding.h */,
+				1A11FEC821C357A600FDFA9C /* TBDeviceProperty+TableCoding.m */,
+				1A11FEC721C357A600FDFA9C /* TBDevice+TableCoding.h */,
+				1A11FEA121C357A600FDFA9C /* TBDevice+TableCoding.m */,
 				1A11FEA421C357A600FDFA9C /* TBDeviceVersion+TableCoding.h */,
-				1A11FEA521C357A600FDFA9C /* TBDeviceUpgradePackage+TableCoding.m */,
-				1A11FEA621C357A600FDFA9C /* TBLockUser+TableCoding.h */,
-				1A11FEA721C357A600FDFA9C /* TBMessagePushSetting+TableCoding.m */,
-				1A11FEA821C357A600FDFA9C /* TBDeviceUpgradeTask+TableCoding.h */,
-				1A11FEA921C357A600FDFA9C /* TBUpgradePackage+TableCoding.m */,
-				1A11FEAA21C357A600FDFA9C /* TBFamilyUser+TableCoding.m */,
-				1A11FEAB21C357A600FDFA9C /* TBOpenLockRecord+TableCoding.m */,
-				1A11FEAC21C357A600FDFA9C /* TBDeviceUserBind+TableCoding.h */,
 				1A11FEAD21C357A600FDFA9C /* TBDeviceVersion+TableCoding.m */,
 				1A11FEAE21C357A600FDFA9C /* TBMessage+TableCoding.h */,
-				1A11FEAF21C357A600FDFA9C /* TBLockUser+TableCoding.m */,
+				1A11FEA321C357A600FDFA9C /* TBMessage+TableCoding.m */,
 				1A11FEB021C357A600FDFA9C /* TBDeviceUpgradePackage+TableCoding.h */,
-				1A11FEB121C357A600FDFA9C /* TBFamilyUser+TableCoding.h */,
-				1A11FEB221C357A600FDFA9C /* TBUpgradePackage+TableCoding.h */,
-				1A11FEB321C357A600FDFA9C /* TBDeviceUpgradeTask+TableCoding.m */,
+				1A11FEA521C357A600FDFA9C /* TBDeviceUpgradePackage+TableCoding.m */,
+				1A11FEA621C357A600FDFA9C /* TBLockUser+TableCoding.h */,
+				1A11FEAF21C357A600FDFA9C /* TBLockUser+TableCoding.m */,
 				1A11FEB421C357A600FDFA9C /* TBMessagePushSetting+TableCoding.h */,
-				1A11FEB521C357A600FDFA9C /* TBDeviceUserBind+TableCoding.m */,
+				1A11FEA721C357A600FDFA9C /* TBMessagePushSetting+TableCoding.m */,
+				1A11FEA821C357A600FDFA9C /* TBDeviceUpgradeTask+TableCoding.h */,
+				1A11FEB321C357A600FDFA9C /* TBDeviceUpgradeTask+TableCoding.m */,
+				1A11FEB221C357A600FDFA9C /* TBUpgradePackage+TableCoding.h */,
+				1A11FEA921C357A600FDFA9C /* TBUpgradePackage+TableCoding.m */,
+				1A11FEB121C357A600FDFA9C /* TBFamilyUser+TableCoding.h */,
+				1A11FEAA21C357A600FDFA9C /* TBFamilyUser+TableCoding.m */,
 				1A11FEB621C357A600FDFA9C /* TBOpenLockRecord+TableCoding.h */,
+				1A11FEAB21C357A600FDFA9C /* TBOpenLockRecord+TableCoding.m */,
+				1A11FEAC21C357A600FDFA9C /* TBDeviceUserBind+TableCoding.h */,
+				1A11FEB521C357A600FDFA9C /* TBDeviceUserBind+TableCoding.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -282,12 +362,12 @@
 		1A11FEBA21C357A600FDFA9C /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				1A11FEBF21C357A600FDFA9C /* TBDatabaseVersion+TableCoding.h */,
 				1A11FEBB21C357A600FDFA9C /* TBDatabaseVersion+TableCoding.m */,
-				1A11FEBC21C357A600FDFA9C /* TBAccount+TableCoding.m */,
+				1A11FEC021C357A600FDFA9C /* TBLocalAccount+TableCoding.h */,
 				1A11FEBD21C357A600FDFA9C /* TBLocalAccount+TableCoding.m */,
 				1A11FEBE21C357A600FDFA9C /* TBAccount+TableCoding.h */,
-				1A11FEBF21C357A600FDFA9C /* TBDatabaseVersion+TableCoding.h */,
-				1A11FEC021C357A600FDFA9C /* TBLocalAccount+TableCoding.h */,
+				1A11FEBC21C357A600FDFA9C /* TBAccount+TableCoding.m */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -295,8 +375,8 @@
 		1A11FEC221C357A600FDFA9C /* Sys */ = {
 			isa = PBXGroup;
 			children = (
-				1A11FEC321C357A600FDFA9C /* SysUser+TableCoding.m */,
 				1A11FEC421C357A600FDFA9C /* SysUser+TableCoding.h */,
+				1A11FEC321C357A600FDFA9C /* SysUser+TableCoding.m */,
 			);
 			path = Sys;
 			sourceTree = "<group>";
@@ -391,24 +471,24 @@
 			isa = PBXGroup;
 			children = (
 				1A11FF6121C3585E00FDFA9C /* TBDeviceUserBind.h */,
+				1A11FF6B21C3585E00FDFA9C /* TBDeviceUserBind.m */,
+				1A11FF7121C3585E00FDFA9C /* TBDeviceUpgradePackage.h */,
 				1A11FF6221C3585E00FDFA9C /* TBDeviceUpgradePackage.m */,
+				1A11FF7021C3585E00FDFA9C /* TBUpgradePackage.h */,
 				1A11FF6321C3585E00FDFA9C /* TBUpgradePackage.m */,
 				1A11FF6421C3585E00FDFA9C /* TBLockUser.h */,
+				1A11FF6F21C3585E00FDFA9C /* TBLockUser.m */,
 				1A11FF6521C3585E00FDFA9C /* TBDeviceUpgradeTask.h */,
+				1A11FF6D21C3585E00FDFA9C /* TBDeviceUpgradeTask.m */,
 				1A11FF6621C3585E00FDFA9C /* TBDeviceVersion.h */,
+				1A11FF6E21C3585E00FDFA9C /* TBDeviceVersion.m */,
+				1A11FF6C21C3585E00FDFA9C /* TBMessage.h */,
 				1A11FF6721C3585E00FDFA9C /* TBMessage.m */,
+				1A11FF7321C3585E00FDFA9C /* TBMessagePushSetting.h */,
 				1A11FF6821C3585E00FDFA9C /* TBMessagePushSetting.m */,
+				1A11FF7221C3585E00FDFA9C /* TBOpenLockRecord.h */,
 				1A11FF6921C3585E00FDFA9C /* TBOpenLockRecord.m */,
 				1A11FF6A21C3585E00FDFA9C /* TBFamilyUser.h */,
-				1A11FF6B21C3585E00FDFA9C /* TBDeviceUserBind.m */,
-				1A11FF6C21C3585E00FDFA9C /* TBMessage.h */,
-				1A11FF6D21C3585E00FDFA9C /* TBDeviceUpgradeTask.m */,
-				1A11FF6E21C3585E00FDFA9C /* TBDeviceVersion.m */,
-				1A11FF6F21C3585E00FDFA9C /* TBLockUser.m */,
-				1A11FF7021C3585E00FDFA9C /* TBUpgradePackage.h */,
-				1A11FF7121C3585E00FDFA9C /* TBDeviceUpgradePackage.h */,
-				1A11FF7221C3585E00FDFA9C /* TBOpenLockRecord.h */,
-				1A11FF7321C3585E00FDFA9C /* TBMessagePushSetting.h */,
 				1A11FF7421C3585E00FDFA9C /* TBFamilyUser.m */,
 			);
 			path = Lock;
@@ -429,6 +509,80 @@
 				1A11FF9621C35E5100FDFA9C /* SingletionClass.h */,
 			);
 			path = TBSingleClass;
+			sourceTree = "<group>";
+		};
+		1A2EA30221C74A57009BE023 /* LockCmds */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EA30321C74A57009BE023 /* ModifyLockUserNicknameCmd.h */,
+				1A2EA31D21C74A57009BE023 /* ModifyLockUserNicknameCmd.m */,
+				1A2EA30521C74A57009BE023 /* SettingReportLockRemindCmd.h */,
+				1A2EA31B21C74A57009BE023 /* SettingReportLockRemindCmd.m */,
+				1A2EA31221C74A57009BE023 /* UnbindDeviceCmd.h */,
+				1A2EA32021C74A57009BE023 /* UnbindDeviceCmd.m */,
+				1A2EA31321C74A57009BE023 /* DeviceShareConfirmCmd.h */,
+				1A2EA31F21C74A57009BE023 /* DeviceShareConfirmCmd.m */,
+				1A2EA31521C74A57009BE023 /* UpgradeLockCmd.h */,
+				1A2EA32321C74A57009BE023 /* UpgradeLockCmd.m */,
+				1A2EA31721C74A57009BE023 /* LockResetCmd.h */,
+				1A2EA32721C74A57009BE023 /* LockResetCmd.m */,
+				1A2EA31821C74A57009BE023 /* UpdateShareUserNickname.h */,
+				1A2EA32521C74A57009BE023 /* UpdateShareUserNickname.m */,
+				1A2EA31A21C74A57009BE023 /* BindLockCmd.h */,
+				1A2EA32421C74A57009BE023 /* BindLockCmd.m */,
+				1A2EA31E21C74A57009BE023 /* LockNotifyReadedCmd.h */,
+				1A2EA31421C74A57009BE023 /* LockNotifyReadedCmd.m */,
+				1A2EA32121C74A57009BE023 /* RequestTemporaryPasswordCmd.h */,
+				1A2EA30621C74A57009BE023 /* RequestTemporaryPasswordCmd.m */,
+				1A2EA32221C74A57009BE023 /* UpdateDeviceNameCmd.h */,
+				1A2EA31621C74A57009BE023 /* UpdateDeviceNameCmd.m */,
+				1A2EA31C21C74A57009BE023 /* DeviceShareCmd.h */,
+				1A2EA30421C74A57009BE023 /* DeviceShareCmd.m */,
+				1A2EA32621C74A57009BE023 /* DeleteLockUserCmd.h */,
+				1A2EA31921C74A57009BE023 /* DeleteLockUserCmd.m */,
+				1A2EA30721C74A57009BE023 /* FamilyCard */,
+			);
+			path = LockCmds;
+			sourceTree = "<group>";
+		};
+		1A2EA30721C74A57009BE023 /* FamilyCard */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EA30E21C74A57009BE023 /* DeleteFamilyCardGuardianCmd.h */,
+				1A2EA30821C74A57009BE023 /* DeleteFamilyCardGuardianCmd.m */,
+				1A2EA30D21C74A57009BE023 /* UnbindFamilyCardCmd.h */,
+				1A2EA30921C74A57009BE023 /* UnbindFamilyCardCmd.m */,
+				1A2EA30A21C74A57009BE023 /* GetCardUsersCmd.h */,
+				1A2EA31021C74A57009BE023 /* GetCardUsersCmd.m */,
+				1A2EA30F21C74A57009BE023 /* BindFamilyCardCmd.h */,
+				1A2EA30B21C74A57009BE023 /* BindFamilyCardCmd.m */,
+				1A2EA31121C74A57009BE023 /* UpdateCardPhoneCmd.h */,
+				1A2EA30C21C74A57009BE023 /* UpdateCardPhoneCmd.m */,
+			);
+			path = FamilyCard;
+			sourceTree = "<group>";
+		};
+		1A2EA32821C74A57009BE023 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EA32A21C74A57009BE023 /* ModifyUserNicknameCmd.h */,
+				1A2EA33721C74A57009BE023 /* ModifyUserNicknameCmd.m */,
+				1A2EA33521C74A57009BE023 /* ResetPasswordCmd.h */,
+				1A2EA32B21C74A57009BE023 /* ResetPasswordCmd.m */,
+				1A2EA32D21C74A57009BE023 /* GeneratorCodeCmd.h */,
+				1A2EA33321C74A57009BE023 /* GeneratorCodeCmd.m */,
+				1A2EA32E21C74A57009BE023 /* RegisterAccountCmd.h */,
+				1A2EA33821C74A57009BE023 /* RegisterAccountCmd.m */,
+				1A2EA33B21C74A57009BE023 /* ModifyUserAccountCmd.h */,
+				1A2EA32F21C74A57009BE023 /* ModifyUserAccountCmd.m */,
+				1A2EA33C21C74A57009BE023 /* ModifyPasswordCmd.h */,
+				1A2EA33221C74A57009BE023 /* ModifyPasswordCmd.m */,
+				1A2EA33021C74A57009BE023 /* CheckSMSCodeCmd.h */,
+				1A2EA33A21C74A57009BE023 /* CheckSMSCodeCmd.m */,
+				1A2EA33121C74A57009BE023 /* UploadHeadPortraitCmd.h */,
+				1A2EA33921C74A57009BE023 /* UploadHeadPortraitCmd.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		1A65EA1E21BFBC9C00667FA9 = {
@@ -612,30 +766,44 @@
 			files = (
 				1A11FEDA21C357A600FDFA9C /* TBDeviceUpgradeTask+TableCoding.m in Sources */,
 				1A11FED221C357A600FDFA9C /* TBMessage+TableCoding.m in Sources */,
+				1A2EA34A21C74A57009BE023 /* UnbindDeviceCmd.m in Sources */,
+				1A2EA33D21C74A57009BE023 /* DeviceShareCmd.m in Sources */,
 				1A1100D021C3891600FDFA9C /* QueryDataCmd.m in Sources */,
 				1A11FF8721C3585E00FDFA9C /* TBUpgradePackage.m in Sources */,
 				1A11FED521C357A600FDFA9C /* TBUpgradePackage+TableCoding.m in Sources */,
 				1A11FEDC21C357A600FDFA9C /* TBDatabaseManager.m in Sources */,
+				1A2EA34121C74A57009BE023 /* BindFamilyCardCmd.m in Sources */,
+				1A2EA35121C74A57009BE023 /* ModifyUserAccountCmd.m in Sources */,
 				1A11FF8B21C3585E00FDFA9C /* TBDeviceUserBind.m in Sources */,
+				1A2EA34821C74A57009BE023 /* ModifyLockUserNicknameCmd.m in Sources */,
 				1A65EA2F21BFBC9D00667FA9 /* ViewController.m in Sources */,
+				1A2EA34B21C74A57009BE023 /* UpgradeLockCmd.m in Sources */,
 				1A11FF8021C3585E00FDFA9C /* TBLocalAccount.m in Sources */,
 				1A65EA3A21BFBC9F00667FA9 /* main.m in Sources */,
+				1A2EA34321C74A57009BE023 /* GetCardUsersCmd.m in Sources */,
 				1A11FEE121C357A600FDFA9C /* NSUserDefaults+Cache.m in Sources */,
+				1A2EA35521C74A57009BE023 /* ModifyUserNicknameCmd.m in Sources */,
 				1A11FEDF21C357A600FDFA9C /* TBLocalAccount+TableCoding.m in Sources */,
 				1A11FF3321C3582600FDFA9C /* GCDAsyncSocket.m in Sources */,
+				1A2EA34221C74A57009BE023 /* UpdateCardPhoneCmd.m in Sources */,
+				1A2EA35821C74A57009BE023 /* CheckSMSCodeCmd.m in Sources */,
 				1A11FF8121C3585E00FDFA9C /* TBAccount.m in Sources */,
 				1A11FF9321C3585E00FDFA9C /* TBDevice.m in Sources */,
 				1A11FED321C357A600FDFA9C /* TBDeviceUpgradePackage+TableCoding.m in Sources */,
 				1A11FF8C21C3585E00FDFA9C /* TBDeviceUpgradeTask.m in Sources */,
+				1A2EA33F21C74A57009BE023 /* DeleteFamilyCardGuardianCmd.m in Sources */,
 				1A11FF4F21C3582600FDFA9C /* FMResultSet.m in Sources */,
 				1A11FF9121C3585E00FDFA9C /* SysUser.m in Sources */,
 				1A11FEDB21C357A600FDFA9C /* TBDeviceUserBind+TableCoding.m in Sources */,
+				1A2EA33E21C74A57009BE023 /* RequestTemporaryPasswordCmd.m in Sources */,
 				1A11FF8821C3585E00FDFA9C /* TBMessage.m in Sources */,
 				1A11FF3221C3582600FDFA9C /* GCDAsyncUdpSocket.m in Sources */,
 				1A11FEDE21C357A600FDFA9C /* TBAccount+TableCoding.m in Sources */,
 				1A11FF7F21C3585E00FDFA9C /* TBDatabaseVersion.m in Sources */,
+				1A2EA34921C74A57009BE023 /* DeviceShareConfirmCmd.m in Sources */,
 				1A11FF9221C3585E00FDFA9C /* TBDeviceProperty.m in Sources */,
 				1A11FF4B21C3582600FDFA9C /* FMDatabaseQueue.m in Sources */,
+				1A2EA34C21C74A57009BE023 /* BindLockCmd.m in Sources */,
 				1A1100E421C3A40400FDFA9C /* Constant.m in Sources */,
 				1A11FED921C357A600FDFA9C /* TBLockUser+TableCoding.m in Sources */,
 				1A11FEE021C357A600FDFA9C /* SysUser+TableCoding.m in Sources */,
@@ -643,28 +811,40 @@
 				1A11FF8A21C3585E00FDFA9C /* TBOpenLockRecord.m in Sources */,
 				1A11FF8E21C3585E00FDFA9C /* TBLockUser.m in Sources */,
 				1A11FED621C357A600FDFA9C /* TBFamilyUser+TableCoding.m in Sources */,
+				1A2EA34721C74A57009BE023 /* SettingReportLockRemindCmd.m in Sources */,
 				1A11FEEF21C357DE00FDFA9C /* TBReadTableManager.m in Sources */,
 				1A11FF9021C3585E00FDFA9C /* TBGateway.m in Sources */,
 				1A11FF4D21C3582600FDFA9C /* FMDatabase.m in Sources */,
 				1A1100D321C3891600FDFA9C /* TokenReportCmd.m in Sources */,
+				1A2EA34021C74A57009BE023 /* UnbindFamilyCardCmd.m in Sources */,
 				1A1100DF21C3891600FDFA9C /* QueryDataUpOrDownCmd.m in Sources */,
 				1A11FF8621C3585E00FDFA9C /* TBDeviceUpgradePackage.m in Sources */,
 				1A11FEDD21C357A600FDFA9C /* TBDatabaseVersion+TableCoding.m in Sources */,
 				1A11FEE221C357A600FDFA9C /* TBDeviceProperty+TableCoding.m in Sources */,
 				1A11FF8F21C3585E00FDFA9C /* TBFamilyUser.m in Sources */,
+				1A2EA34D21C74A57009BE023 /* UpdateShareUserNickname.m in Sources */,
+				1A2EA35621C74A57009BE023 /* RegisterAccountCmd.m in Sources */,
 				1A11FED121C357A600FDFA9C /* TBDevice+TableCoding.m in Sources */,
 				1A11FEE421C357A600FDFA9C /* TBStorage.m in Sources */,
 				1A11FF8921C3585E00FDFA9C /* TBMessagePushSetting.m in Sources */,
+				1A2EA34F21C74A57009BE023 /* ResetPasswordCmd.m in Sources */,
+				1A2EA34421C74A57009BE023 /* LockNotifyReadedCmd.m in Sources */,
 				1A11FEE321C357A600FDFA9C /* TBGateway+TableCoding.m in Sources */,
 				1A11FED821C357A600FDFA9C /* TBDeviceVersion+TableCoding.m in Sources */,
 				1A11FF4C21C3582600FDFA9C /* FMDatabaseAdditions.m in Sources */,
+				1A2EA34521C74A57009BE023 /* UpdateDeviceNameCmd.m in Sources */,
+				1A2EA35321C74A57009BE023 /* GeneratorCodeCmd.m in Sources */,
 				1A11FED421C357A600FDFA9C /* TBMessagePushSetting+TableCoding.m in Sources */,
 				1A11FEEE21C357DE00FDFA9C /* TBReadTableTask.m in Sources */,
 				1A11FED021C357A600FDFA9C /* Tables.m in Sources */,
+				1A2EA35721C74A57009BE023 /* UploadHeadPortraitCmd.m in Sources */,
 				1A11FF8D21C3585E00FDFA9C /* TBDeviceVersion.m in Sources */,
+				1A2EA35221C74A57009BE023 /* ModifyPasswordCmd.m in Sources */,
 				1A11FEED21C357DE00FDFA9C /* PushCenter.m in Sources */,
 				1A11FED721C357A600FDFA9C /* TBOpenLockRecord+TableCoding.m in Sources */,
 				1A65EA2C21BFBC9D00667FA9 /* AppDelegate.m in Sources */,
+				1A2EA34E21C74A57009BE023 /* LockResetCmd.m in Sources */,
+				1A2EA34621C74A57009BE023 /* DeleteLockUserCmd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

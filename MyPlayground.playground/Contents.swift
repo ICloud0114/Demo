@@ -94,14 +94,19 @@ import UIKit
 //let utcDate = format.date(from: dateStr)
 //print(utcDate!.timeIntervalSince1970)
 
-func create(){
-    for index in 0 ... 6{
-        guard index == 2 else{
-            continue
-        }
-        print(index)
-    }
+//func create(){
+//    for index in 0 ... 6{
+//        guard index == 2 else{
+//            continue
+//        }
+//        print(index)
+//    }
+//}
+//
+//create()
+
+let list = [0, 2, -1 , 3, -3, 5, -4, -10, 7, 8]
+let sort = list.sorted { (l1, l2) -> Bool in
+    return l1 > 0
 }
-
-create()
-
+print(sort)

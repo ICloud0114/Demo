@@ -26,8 +26,9 @@
 - (IBAction)loginAction:(id)sender {
     [[TBUser shareInstance] loginWithAccount:@"18576692579" password:@"123456" completion:^(NSError * _Nullable error) {
         if (error != nil){
-            
+           printf("-----登录失败");
         }
+        printf("-----登录成功");
     }];
 }
 - (IBAction)requestCodeAction:(id)sender {

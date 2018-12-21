@@ -19,6 +19,11 @@
 @property (nonatomic, strong) FMDatabaseQueue *dbQueue;
 @end
 
+//获取应用程序document目录
+static inline NSString *document() {
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
 @implementation TBDatabaseManager
 @synthesize tableModelMaps = _tableModelMaps;
 
@@ -73,7 +78,7 @@
 }
 
 - (void)initDatabase {
-    NSString *dbPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:DATABASE_NAME];
+    NSString *dbPath = [document() stringByAppendingPathComponent:DATABASE_NAME];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDbExist = [fileManager fileExistsAtPath:dbPath];
     if (!isDbExist) {
