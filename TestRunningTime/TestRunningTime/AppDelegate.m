@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  testFramwork
+//  TestRunningTime
 //
-//  Created by ICloud on 2018/12/11.
-//  Copyright © 2018年 ICloud. All rights reserved.
+//  Created by ICloud on 2018/12/26.
+//  Copyright © 2018 ICloud. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <TBUser_Http_Lib/TBUserConfig.h>
-#import <TBUser_Http_Lib/TBUser+Cloud.h>
+
 @interface AppDelegate ()
 
 @end
@@ -18,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    TBUserConfig.companyId = @"acead991305a4037ac22ba1ed34d4d53";
-    [[TBUser shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

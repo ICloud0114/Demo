@@ -105,8 +105,25 @@ import UIKit
 //
 //create()
 
-let list = [0, 2, -1 , 3, -3, 5, -4, -10, 7, 8]
-let sort = list.sorted { (l1, l2) -> Bool in
-    return l1 > 0
-}
-print(sort)
+//let list = [0, 2, -1 , 3, -3, 5, -4, -10, 7, 8]
+//let sort = list.sorted { (l1, l2) -> Bool in
+//    return l1 > 0
+//}
+//print(sort)
+//for i in 0 ..< (data.length) {
+//    var temp: Int32 = 0
+//    //循环读取   每四个字节为长度 取值
+//    if i % 4 == 0 {
+//        data.getBytes(&temp, range: NSRange(location: i,length:4))
+//        midelArr.append(temp)
+//        if midelArr.count == 2 {
+//            dataArr.append(midelArr)
+//            midelArr.removeAll()
+//        }
+//    }
+//}
+
+var arr: [Int] = [1, 2, 3, 4]
+arr.remove(at: 1)
+arr.insert(0, at: 1)
+

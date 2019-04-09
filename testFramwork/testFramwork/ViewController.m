@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <TBUser_Http_Lib/TBUserConfig.h>
+
 #import <TBUser_Http_Lib/TBUser.h>
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
@@ -19,16 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    TBUserConfig.companyId = @"acead991305a4037ac22ba1ed34d4d53";
     
+
 }
 
 - (IBAction)loginAction:(id)sender {
-    [[TBUser shareInstance] loginWithAccount:@"18576692579" password:@"123456" completion:^(NSError * _Nullable error) {
+    [[TBUser shareInstance] loginWithAccount:@"18565772859" password:@"123456" completion:^(NSError * _Nullable error) {
         if (error != nil){
-           printf("-----登录失败");
+            NSLog(@"-----登录失败");
         }
-        printf("-----登录成功");
+        NSLog(@"-----登录成功");
     }];
 }
 - (IBAction)requestCodeAction:(id)sender {
