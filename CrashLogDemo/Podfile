@@ -1,0 +1,12 @@
+use_frameworks!
+platform:ios, '10.0'
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'git@192.168.3.56:ios/PodSpec/TopbandSpec.git'
+
+target 'CrashLogDemo' do
+  pod 'TBCrashManager', '~> 0.0.1'
+end
+
+
+
+

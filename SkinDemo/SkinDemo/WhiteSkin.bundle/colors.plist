@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>text</key>
-	<string>0x464646</string>
-	<key>tip</key>
-	<string>0xacacac</string>
 	<key>styleTitle</key>
 	<string>0xffffff</string>
 	<key>navigationTitle</key>

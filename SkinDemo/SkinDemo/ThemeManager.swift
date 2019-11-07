@@ -68,15 +68,10 @@ final class ThemeManager: NSObject {
             return nil
         }
         
-        let url = URL(fileURLWithPath: path)
-        let data = try! Data(contentsOf: url)
-        
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: [JSONSerialization.ReadingOptions(rawValue: 0)]) as? NSDictionary
-        } catch {
+        guard let data = NSDictionary(contentsOfFile: path) else{
             return nil
         }
-        
+        return data
     }
     
     public func updateThemeStyle(_ style: ThemeStyle) {
