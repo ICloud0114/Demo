@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="UserContentExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="380"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="138904814.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KLy-LC-xAh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KLy-LC-xAh" secondAttribute="height" multiplier="500:333" id="moN-jg-049"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="15" y="233.5" width="305" height="146.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2fl-s1-j5h">
+                                <rect key="frame" x="15" y="213" width="290" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="YPp-9g-FZp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2fl-s1-j5h" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="15" id="346-Eq-IVr"/>
+                            <constraint firstItem="KLy-LC-xAh" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="Esm-cm-7o7"/>
+                            <constraint firstItem="KLy-LC-xAh" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="EvY-dn-vLt"/>
+                            <constraint firstItem="2fl-s1-j5h" firstAttribute="top" secondItem="KLy-LC-xAh" secondAttribute="bottom" id="G7S-KP-VW2"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="2fl-s1-j5h" secondAttribute="bottom" id="bxo-pp-Giz"/>
+                            <constraint firstItem="KLy-LC-xAh" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="dXI-qN-JN2"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" id="vvC-Tr-heV"/>
+                            <constraint firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" id="xM6-f6-pG2"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="15" id="zOu-gi-fF9"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="2fl-s1-j5h" secondAttribute="trailing" constant="15" id="zzj-uH-mYW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="380"/>
+                    <connections>
+                        <outlet property="notificationBody" destination="GcN-lo-r42" id="dNZ-v3-NVb"/>
+                        <outlet property="notificationImage" destination="KLy-LC-xAh" id="sBt-oz-FUX"/>
+                        <outlet property="notificationTitle" destination="2fl-s1-j5h" id="mEi-GH-cDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.56521739130437" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="138904814.jpg" width="500" height="333"/>
+    </resources>
+</document>

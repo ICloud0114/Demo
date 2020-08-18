@@ -32,9 +32,9 @@ class LoginViewController: UIViewController {
     func performExistingAccountSetupFlows() {
         // Prepare requests for both Apple ID and password providers.
         ///当用户确认过的就会弹出来
+//        读取 Keychain 中保存的密码，苹果提供了与授权登录类似的 API
         let requests = [ASAuthorizationAppleIDProvider().createRequest(),
                         ASAuthorizationPasswordProvider().createRequest()]
-        
         // Create an authorization controller with the given requests.
         let authorizationController = ASAuthorizationController(authorizationRequests: requests)
         authorizationController.delegate = self
@@ -48,7 +48,9 @@ class LoginViewController: UIViewController {
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
         
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        let passwordRequest = ASAuthorizationPasswordProvider().createRequest()
+        
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request, passwordRequest])
         authorizationController.delegate = self
         authorizationController.presentationContextProvider = self
         authorizationController.performRequests()
@@ -60,10 +62,29 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             let userIdentifier = appleIDCredential.user
-            ///当用户认证过后，第二次就不会获取到信息了
+            ///当用户认证过后，第二次就不会获取到fullName、email信息了
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
+            let identityToken = appleIDCredential.identityToken?.base64EncodedString()
+            print(identityToken)
+            let code = appleIDCredential.authorizationCode?.base64EncodedString()
+            print(code)
             
+            guard let _ = identityToken else { return }
+                        
+//            let token = String(data: identityToken!, encoding: .utf8)
+//            let arr = token?.components(separatedBy: ".")
+//            let header = arr?[0]
+//            let payload = arr?[1]
+            
+//            let headerData = Data(base64Encoded: header!, options: .ignoreUnknownCharacters)//NSData(base64Encoded: header!, options: .ignoreUnknownCharacters)
+//            let decodeHeader = String(data: (headerData! as Data), encoding: .utf8)
+
+//            let payloadData = NSData(base64Encoded: payload!, options: .ignoreUnknownCharacters)//NSData(base64Encoded: payload!)
+//            let decodePayload = String(data: (payloadData! as Data), encoding: .utf8)
+            
+//            print("Header---" + decodeHeader!)
+//            print("payload---" + decodePayload!)
             // Create an account in your system.
             // For the purpose of this demo app, store the userIdentifier in the keychain.
             do {

@@ -21,9 +21,6 @@ class ViewController: UIViewController {
 
         let appleIDButton = ASAuthorizationAppleIDButton(type: .default, style: ASAuthorizationAppleIDButton.Style.white)
         appleIDButton.frame = CGRect(x: 100, y: 100, width: 130, height: 30)
-        
-//        appleIDButton.bounds = CGRect(x: 0, y: 0, width: 40, height: 40)
-//        appleIDButton.cornerRadius = 20.0
         appleIDButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
         self.view.addSubview(appleIDButton)
 //        hotspotConfiguration()
@@ -145,6 +142,9 @@ extension ViewController: ASAuthorizationControllerDelegate, ASAuthorizationCont
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
+            print("uid-->", userIdentifier)
+            print("code-->", String(data: appleIDCredential.authorizationCode!, encoding: .utf8)!)
+            print("idToken-->", String(data: appleIDCredential.identityToken!, encoding: .utf8)!)
             
         } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
             // Sign in using an existing iCloud Keychain credential.

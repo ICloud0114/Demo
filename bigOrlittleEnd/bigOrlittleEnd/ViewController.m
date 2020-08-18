@@ -23,7 +23,8 @@
     char* px = (char*)&x;
     printf("%x%x%x%x\n", px[0], px[1], px[2], px[3]);
     
-   BOOL result = checkCPU();
+    BOOL result = checkCPU();
+    printf("%d",result);
     
 }
 int checkCPU()

@@ -18,24 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             registerLocalNotification()
         ///判断本地是否注销
         let appleIDProvider = ASAuthorizationAppleIDProvider()
-        appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
+        appleIDProvider.getCredentialState(forUserID: "000770.fdf761f296e14fb2847175a22de491fc.0101") { (credentialState, error) in
             switch credentialState {
             case .authorized:
                 // The Apple ID credential is valid.
+                print("authorized")
                 break
             case .revoked:
                 // The Apple ID credential is revoked.
+                print("revoked")
                 break
             case .notFound:
+                print("not found")
                 // No credential was found, so show the sign-in UI.
-                DispatchQueue.main.async {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    guard let viewController = storyboard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController
-                        else { return }
-                    viewController.modalPresentationStyle = .formSheet
-                    viewController.isModalInPresentation = true
-                    self.window?.rootViewController?.present(viewController, animated: true, completion: nil)
-                }
+//                DispatchQueue.main.async {
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    guard let viewController = storyboard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController
+//                        else { return }
+//                    viewController.modalPresentationStyle = .formSheet
+//                    viewController.isModalInPresentation = true
+//                    self.window?.rootViewController?.present(viewController, animated: true, completion: nil)
+//                }
             default:
                 break
             }

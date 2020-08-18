@@ -274,7 +274,7 @@
 				TargetAttributes = {
 					4CE28A0E1D5897630014B847 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3BU49H4W7F;
+						DevelopmentTeam = N328N2YE4V;
 						DevelopmentTeamName = "Junfeng Lu";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -310,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -524,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyUserNotificationTestDemo/MyUserNotificationTestDemo.entitlements;
+				DEVELOPMENT_TEAM = N328N2YE4V;
 				INFOPLIST_FILE = MyUserNotificationTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netease.www.MyUserNotificationTestDemo;

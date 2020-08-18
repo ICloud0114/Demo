@@ -1,0 +1,9 @@
+use_frameworks!
+platform :ios, '10.0'
+inhibit_all_warnings!
+source 'git@192.168.3.56:ios/PodSpec/TopbandSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'TestDemo' do
+  pod 'SDWebImage', '~> 5.7.1'
+  
+end
